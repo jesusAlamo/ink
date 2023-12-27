@@ -204,13 +204,16 @@ button{
 /*-------------------------------------------------*/
 
 .main{
-    /* background-color: lightgreen; */
-    width: 100%;
+    background-color: lightgreen;
+    /* width: 100%; */
+    width: 100vw;
     height: 100vh;
     padding: 10px;
+
+    overflow: hidden;
 }
 .main__grid{
-    /* background-color: blue; */
+    background-color: blue;
     width: 100%;
     height: 100%;
     /* padding: 20px; */
