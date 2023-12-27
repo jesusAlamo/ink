@@ -323,11 +323,12 @@ button{
     /* font-size: 1.9vw; */
     font-size: 3vw;
     font-family: 'Permanent Marker', cursive;
-    text-transform: uppercase;
-    letter-spacing: -2px;
+    font-family: 'Caveat', cursive;
+    /* text-transform: uppercase; */
+    /* letter-spacing: -2px; */
     line-height: 3.8vw;
     text-align: center;
-    /* font-weight: 400; */
+    font-weight: 900;
 }
 .main__area:hover .main__dot{
     border-radius: 40px;
