@@ -47,8 +47,6 @@ body{
 
     position: relative;
     overflow: hidden;
-    width: 100vw;
-    height: 100vh;
 }
 button{
     /* cursor: none; */
@@ -390,7 +388,72 @@ button{
     100%{
         transform: scale(1) rotate(-720deg);
     }
-} 
+}
+
+.main__mobile{
+    /* background-color: blue; */
+    width: 100%;
+    min-height: 100%;
+    padding: 10px;
+
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.mobile__h1{
+    /* background-color: burlywood; */
+    width: 80%;
+    width: 40vh;
+    /* object-fit: contain; */
+}
+.mobile__logo{
+    /* background-color: yellow; */
+    width: 80%;
+    margin: auto;
+}
+.mobile__nav{
+    /* background-color: lightgreen; */
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.mobile__ul{
+    /* background-color: peru; */
+    width: 80%;
+    padding: 10px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.mobile__li{
+    background-color: white;
+    /* background-color: purple; */
+    width: 95%;
+    min-width: 200px;
+    border-radius: 30px;
+}
+.mobile__a{
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+}
+.mobile__h2{
+    font-size: 2rem;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Caveat', cursive;
+    line-height: 1rem;
+    text-align: center;
+    font-weight: 900;
+}
 
 /*-------------------------------------------------*/
 
@@ -472,14 +535,11 @@ button{
 
 /*-------------------------------------------------*/
 
-@media(max-width: 650px){
+@media(max-width: 900px){
     .main__grid{
         display: none;
+    }
+    .main__mobile{
+        display: flex;
     }
 }
-
-/* @media(max-height: 512px){
-    .main__grid{
-        display: none;
-    }
-} */
