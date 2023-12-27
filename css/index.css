@@ -535,20 +535,20 @@ button{
 
 /*-------------------------------------------------*/
 
-@media(max-width: 600px){
+@media(max-width: 450px){
     .main__grid{
         display: none;
     }
     .main__mobile{
         display: flex;
     }
-    .cursor{
+    /* .cursor{
         width: 20px;
         min-height: 20px;
-    }           /* Problema en modo mobile para central el circulo en el puntero */
+    }           Problema en modo mobile para central el circulo en el puntero
     .cursor__inner{
         width: 6px;
         height: 6px;
         border: 0.4px solid black;
-    }           /* Problema en modo mobile para central el circulo en el puntero */
+    }           Problema en modo mobile para central el circulo en el puntero */
 }
