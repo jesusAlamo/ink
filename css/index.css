@@ -58,8 +58,8 @@ button{
 .cursor{
     background-color: white;
     /* background-color: red; */
-    width: 3vw;                         /*Tremendo problema --> @media y se escala?*/
-    min-height: 3vw;
+    width: 60px;
+    min-height: 60px;
     border-radius: 50%;
     display: block;
 
@@ -78,9 +78,9 @@ button{
     /* background-color: lightcoral; */
     /* background-color: lightgreen; */
     /* background-color: lightskyblue; */
-    width: 1vw;
-    height: 1vw;
-    border: 0.1vw solid black;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
     border-radius: 50%;
 
     /* filter: blur(0.1em); */
@@ -535,11 +535,20 @@ button{
 
 /*-------------------------------------------------*/
 
-@media(max-width: 900px){
+@media(max-width: 600px){
     .main__grid{
         display: none;
     }
     .main__mobile{
         display: flex;
     }
+    .cursor{
+        width: 20px;
+        min-height: 20px;
+    }           /* Problema en modo mobile para central el circulo en el puntero */
+    .cursor__inner{
+        width: 6px;
+        height: 6px;
+        border: 0.4px solid black;
+    }           /* Problema en modo mobile para central el circulo en el puntero */
 }

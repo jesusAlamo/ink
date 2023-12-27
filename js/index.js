@@ -13,8 +13,8 @@ console.log( cursor )
         console.log( 'e.clientY' )
         console.log( e.clientY )
 
-        const cursorX = e.clientX - 25
-        const cursorY = e.clientY - 25
+        const cursorX = e.clientX - 30
+        const cursorY = e.clientY - 30
 
         console.log( 'cursorX' )
         console.log( cursorX )
