@@ -439,6 +439,8 @@ button{
     width: 95%;
     min-width: 200px;
     border-radius: 30px;
+
+    z-index: 1;
 }
 .mobile__a{
     background-color: rgba(255, 255, 255, 0);
@@ -448,7 +450,6 @@ button{
 }
 .mobile__h2{
     font-size: 2rem;
-    font-family: 'Permanent Marker', cursive;
     font-family: 'Caveat', cursive;
     line-height: 1rem;
     text-align: center;
