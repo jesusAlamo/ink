@@ -58,7 +58,7 @@ button{
 .cursor{
     background-color: white;
     /* background-color: red; */
-    width: 3vw;
+    width: 3vw;                         /*Tremendo problema --> @media y se escala?*/
     min-height: 3vw;
     border-radius: 50%;
     display: block;
@@ -74,13 +74,18 @@ button{
 
 }
 .cursor__inner{
-    /* background-color: red; */
+    background-color: white;
+    /* background-color: lightcoral; */
+    /* background-color: lightgreen; */
+    /* background-color: lightskyblue; */
     width: 1vw;
     height: 1vw;
-    border: 0.3vw solid black;
+    border: 0.1vw solid black;
     border-radius: 50%;
 
-    opacity: 0;
+    /* filter: blur(0.1em); */
+
+    /* animation: cursor__animation 2s 0s linear infinite both; */
 }
 
 /*-------------------------------------------------*/
