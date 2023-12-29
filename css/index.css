@@ -153,18 +153,6 @@ button{
 
     transition: all .2s ease;
 }
-.corner__img{
-    background-color: rgba(122, 217, 255, 0.507);
-    width: 80%;
-    padding: 10px;
-    border-radius: 50%;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    cursor: crosshair;
-}
 .topl{
     top: -150px;
     left: -150px;
@@ -200,6 +188,34 @@ button{
 }
 .corner:hover .bottomr{
     transform: translateX(0%) translateY(0%);
+}
+.corner__img{
+    background-color: rgba(122, 217, 255, 0.507);
+    width: 80%;
+    padding: 10px;
+    border-radius: 50%;
+
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+
+    cursor: crosshair;
+}
+.tleft{
+    top: 0;
+    left: 0;
+}
+.tright{
+    top: 0;
+    right: 0;
+}
+.bleft{
+    bottom: 0;
+    left: 0;
+}
+.bright{
+    bottom: 0;
+    right: 0;
 }
 
 /*-------------------------------------------------*/
