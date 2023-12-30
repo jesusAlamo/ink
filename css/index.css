@@ -100,7 +100,8 @@ button{
 }  */
 
 .corner{
-    background-color: orange;
+    /* background-color: orange; */
+    /* border: 2px dotted red; */
     width: 250px;
     height: 250px;
     /* padding: 10px; */
@@ -110,7 +111,7 @@ button{
     /* top: 0;
     left: 0; */
 
-    cursor: auto;
+    /* cursor: auto; */
 }
 .topleft{
     border-bottom-right-radius: 60%;
@@ -137,15 +138,15 @@ button{
     right: 0;
 }
 .corner__area{
-    background-color: lightseagreen;
-    width: 400px;
-    height: 400px;
-    padding: 10px;
-    border-radius: 40%;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    /* padding: 10px; */
+    /* border-radius: 40%; */
 
     position: absolute;
-    top: -150px;
-    left: -150px;
+    /* top: -150px; */
+    /* left: -150px; */
     top: 0;
     left: 0;
 
@@ -154,8 +155,10 @@ button{
     transition: all .2s ease;
 }
 .topl{
-    top: -150px;
-    left: -150px;
+    border-bottom-right-radius: 60%;
+
+    top: 0;
+    left: 0;
 
     transform: translateX(-100%) translateY(-100%);
 }
@@ -163,8 +166,10 @@ button{
     transform: translateX(0%) translateY(0%);
 }
 .topr{
-    top: -150px;
-    right: 150px;
+    border-bottom-left-radius: 60%;
+
+    top: 0;
+    right: 0;
 
     transform: translateX(100%) translateY(-100%);
 }
@@ -172,8 +177,10 @@ button{
     transform: translateX(0%) translateY(0%);
 }
 .bottoml{
-    bottom: 150px;
-    left: -150px;
+    border-top-right-radius: 60%;
+
+    bottom: 0;
+    left: 0;
 
     transform: translateX(-100%) translateY(100%);
 }
@@ -181,8 +188,10 @@ button{
     transform: translateX(0%) translateY(0%);
 }
 .bottomr{
-    bottom: 150px;
-    right: 150px;
+    border-top-left-radius: 60%;
+
+    bottom: 0;
+    right: 0;
 
     transform: translateX(100%) translateY(100%);
 }
@@ -190,7 +199,7 @@ button{
     transform: translateX(0%) translateY(0%);
 }
 .corner__img{
-    background-color: rgba(122, 217, 255, 0.507);
+    /* background-color: rgba(122, 217, 255, 0.507); */
     width: 80%;
     padding: 10px;
     border-radius: 50%;
@@ -663,13 +672,10 @@ button{
     .main__mobile{
         display: flex;
     }
-    /* .cursor{
-        width: 20px;
-        min-height: 20px;
-    }           Problema en modo mobile para central el circulo en el puntero
-    .cursor__inner{
-        width: 6px;
-        height: 6px;
-        border: 0.4px solid black;
-    }           Problema en modo mobile para central el circulo en el puntero */
+    .cursor{
+        display: none;
+    }
+    .corner{
+        display: none;
+    }
 }
