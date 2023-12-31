@@ -152,7 +152,7 @@ button{
 
     cursor: crosshair;
 
-    transition: all .2s ease;
+    /* transition: .2s all 0s ease; */
 }
 .topl{
     border-bottom-right-radius: 60%;
@@ -202,7 +202,7 @@ button{
     /* background-color: rgba(122, 217, 255, 0.507); */
     width: 80%;
     padding: 10px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 
     position: absolute;
     /* top: 0;
@@ -214,9 +214,48 @@ button{
     top: 0;
     left: 0;
 }
-.tright{
+.tleft__black{
+    /* background-color: rgba(122, 217, 255, 0.507); */
+    /* width: 250px; */
+    /* height: 250px; */
+    /* border-bottom-right-radius: 60%; */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+
+    transition: 0.2s all 0.05s ease;
+}
+.topl:hover .tleft__black{
+    /* background-color: brown; */
+    opacity: 1;
+    /* transform: translateX(0%) translateY(0%); */
+}
+.tright__white{
+    height: 80%;
+    background-image: url(../assets/icon-drop-white.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+
     top: 0;
     right: 0;
+
+    animation: rgb__white 5s 0s ease infinite both;
+}
+.tright__black{
+    height: 80%;
+    background-image: url(../assets/icon-drop-black.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+
+    top: 0;
+    right: 0;
+
+    animation: rgb__black 5s 0s ease infinite both;
 }
 .bleft{
     bottom: 0;
@@ -225,6 +264,50 @@ button{
 .bright{
     bottom: 0;
     right: 0;
+}
+@keyframes rgb__white{
+    0%{
+        /* background-color: rgba(255, 0, 0, 0.2); */
+        /* filter: hue-rotate(0deg) saturate(100%) brightness(50%); */
+        background-image: url(../assets/icon-drop-white-red.png);
+    }
+    33%{
+        /* background-color: rgba(0, 255, 0, 0.2); */
+        /* filter: hue-rotate(120deg) saturate(1000%) brightness(1000%); */
+        background-image: url(../assets/icon-drop-white-green.png);
+    }
+    66%{
+        /* background-color: rgba(0, 0, 255, 0.2); */
+        /* filter: hue-rotate(60deg) saturate(1000%) brightness(500%); */
+        background-image: url(../assets/icon-drop-white-blue.png);
+    }
+    100%{
+        /* background-color: rgba(255, 0, 0, 0.2); */
+        /* filter: hue-rotate(50deg) saturate(50%) brightness(50%); */
+        background-image: url(../assets/icon-drop-white-red.png);
+    }
+}
+@keyframes rgb__black{
+    0%{
+        /* background-color: rgba(255, 0, 0, 0.2); */
+        /* filter: hue-rotate(0deg) saturate(100%) brightness(50%); */
+        background-image: url(../assets/icon-drop-black-red.png);
+    }
+    33%{
+        /* background-color: rgba(0, 255, 0, 0.2); */
+        /* filter: hue-rotate(120deg) saturate(1000%) brightness(1000%); */
+        background-image: url(../assets/icon-drop-black-green.png);
+    }
+    66%{
+        /* background-color: rgba(0, 0, 255, 0.2); */
+        /* filter: hue-rotate(60deg) saturate(1000%) brightness(500%); */
+        background-image: url(../assets/icon-drop-black-blue.png);
+    }
+    100%{
+        /* background-color: rgba(255, 0, 0, 0.2); */
+        /* filter: hue-rotate(50deg) saturate(50%) brightness(50%); */
+        background-image: url(../assets/icon-drop-black-red.png);
+    }
 }
 
 /*-------------------------------------------------*/
@@ -256,7 +339,7 @@ button{
     border-radius: 40%;
     position: absolute;
 
-    transition: all .2s ease;
+    transition: .2s all 0s ease;
 }
 .header__icon{
     /* background-color: green; */
@@ -268,7 +351,7 @@ button{
 .header__drop{
     animation: rgb__animation 5s 0s ease infinite both;
 }
-@keyframes rgb__animation{
+/* @keyframes rgb__animation{
     0%{
         color: red;
     }
@@ -281,7 +364,7 @@ button{
     100%{
         color: red;
     }
-} 
+}  */
 .header__see{}
 .dark{
     background-color: rgb(0, 0, 0);
@@ -405,7 +488,7 @@ button{
 
     position: absolute;
 
-    transition: all .2s ease;
+    transition: .2s all 0s ease;
 }
 .delay__first{
     animation: remember__animation 10s 0s ease infinite both;
@@ -449,7 +532,7 @@ button{
 
     opacity: 0;
     /* transition: .2s all .1s ease; */
-    transition: all 0.2s ease;
+    transition: .2s all 0s ease;
 }
 .main__h2{
     /* font-size: 1.9vw; */
@@ -614,7 +697,7 @@ button{
     border-radius: 40%;
     position: absolute;
 
-    transition: all .2s ease;
+    transition: .2s all 0s ease;
 }
 .footer__ssnn{
     /* background-color: green; */
