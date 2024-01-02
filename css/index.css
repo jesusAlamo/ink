@@ -43,13 +43,11 @@ body{
     /* background-color: #0f0f0f; */
 
     cursor: none;
-    /* cursor: crosshair; */
 
     position: relative;
     overflow: hidden;
 }
 button{
-    /* cursor: none; */
     cursor: crosshair;
 }
 
@@ -57,14 +55,11 @@ button{
 
 .cursor{
     background-color: white;
-    /* background-color: red; */
     width: 60px;
     min-height: 60px;
     border-radius: 50%;
     display: block;
 
-    /* filter: blur(0.1em); */
-    
     position: absolute;
 
     display: flex;
@@ -82,36 +77,15 @@ button{
     height: 20px;
     border: 1px solid black;
     border-radius: 50%;
-
-    /* filter: blur(0.1em); */
-
-    /* animation: cursor__animation 2s 0s linear infinite both; */
 }
-/* @keyframes cursor__animation{
-    0%{
-        border: 0.1vw solid black;
-    }
-    50%{
-        border: 0.3vw solid black;
-    }
-    100%{
-        border: 0.1vw solid black;
-    }
-}  */
 
 .corner{
     /* background-color: orange; */
     /* border: 2px dotted red; */
     width: 250px;
     height: 250px;
-    /* padding: 10px; */
 
     position: fixed;
-
-    /* top: 0;
-    left: 0; */
-
-    /* cursor: auto; */
 }
 .topleft{
     border-bottom-right-radius: 60%;
@@ -141,12 +115,8 @@ button{
     background-color: white;
     width: 250px;
     height: 250px;
-    /* padding: 10px; */
-    /* border-radius: 40%; */
 
     position: absolute;
-    /* top: -150px; */
-    /* left: -150px; */
     top: 0;
     left: 0;
 
@@ -202,11 +172,8 @@ button{
     /* background-color: rgba(122, 217, 255, 0.507); */
     width: 80%;
     padding: 10px;
-    /* border-radius: 50%; */
 
     position: absolute;
-    /* top: 0;
-    left: 0; */
 
     cursor: crosshair;
 }
@@ -233,9 +200,9 @@ button{
     opacity: 1;
     /* transform: translateX(0%) translateY(0%); */
 }
-.tright__white{
+.tright__white, .tright__black{
     height: 80%;
-    background-image: url(../assets/icon-drop-white.png);
+    /* background-image: url(../assets/icon-drop-white.png); */
     background-repeat: no-repeat;
     background-position:center;
     background-size: contain;
@@ -247,7 +214,7 @@ button{
 }
 .tright__black{
     height: 80%;
-    background-image: url(../assets/icon-drop-black.png);
+    /* background-image: url(../assets/icon-drop-black.png); */
     background-repeat: no-repeat;
     background-position:center;
     background-size: contain;
@@ -350,10 +317,10 @@ button{
 }
 .main__area{
     /* background-color: yellow; */
-        /* width: 100px;
-        height: 100px; */
-    width: 24vw;
-    height: 4vw;
+        width: 450px;
+        height: 75px;
+    /* width: 24vw;
+    height: 4vw; */
     /* padding: 10px; */
 
     /* border: 2px dotted red; */
@@ -369,10 +336,10 @@ button{
 }
 .main__remember{
     background-color: white;
-        /* width: 20px;
-        height: 20px; */
-    width: 1vw;
-    height: 1vw;
+        width: 20px;
+        height: 20px;
+    /* width: 1vw;
+    height: 1vw; */
 
     /* border: 0.1vw solid black; */
     border-radius: 50%;
@@ -381,10 +348,10 @@ button{
 }
 .main__dot{
     background-color: white;
-        /* width: 20px;
-        height: 20px; */
-    width: 1vw;
-    height: 1vw;
+        width: 20px;
+        height: 20px;
+    /* width: 1vw;
+    height: 1vw; */
 
     /* border: 0.1vw solid black; */
     border-radius: 50%;
@@ -423,10 +390,12 @@ button{
     }
 } 
 .main__a{
-    background-color: rgba(255, 255, 255, 0);
-    width: 24vw;
+    /* background-color: rgba(255, 255, 255, 0.671); */
+    width: 450px;
+    /* width: 24vw; */
     /* border: 2px dotted yellow; */
-    padding: 0.1vw 0.5vw;
+    /* padding: 2px 10px; */
+    /* padding: 0.1vw 0.5vw; */
     border-radius: 30px;
     
     position: absolute;
@@ -439,12 +408,14 @@ button{
 }
 .main__h2{
     /* font-size: 1.9vw; */
-    font-size: 3vw;
+    font-size: 60px;
+    /* font-size: 3vw; */
     font-family: 'Permanent Marker', cursive;
     font-family: 'Caveat', cursive;
     /* text-transform: uppercase; */
     /* letter-spacing: -2px; */
-    line-height: 3.8vw;
+    line-height: 76px;
+    /* line-height: 3.8vw; */
     text-align: center;
     font-weight: 900;
 }
@@ -452,16 +423,20 @@ button{
     border-radius: 40px;
     /* transform: scale(5); */
     /* transform: scaleX(15) scaleY(5); */
-    width: 24vw;
-    height: 4vw;
+    width: 450px;
+    height: 75px;
+    /* width: 24vw;
+    height: 4vw; */
 }
 .main__a:hover {
     opacity: 1;
 }
 .main__h1{
     /* background-color: yellow; */
-    width: 20vw;
-    height: 20vw;
+    width: 400px;
+    height: 400px;
+    /* width: 20vw;
+    height: 20vw; */
     padding: 10px;
 
     /* border: 2px dotted red; */
@@ -513,34 +488,47 @@ button{
 
     display: none;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content:space-around;
+    /* justify-content: flex-start; */
     align-items: center;
     gap: 10px;
 }
 .mobile__h1{
-    /* background-color: burlywood; */
-    width: 80%;
-    width: 40vh;
+    background-color: burlywood;
+    /* width: 80%; */
+    /* width: 70%; */
+    width: 100%;
+    min-width: 200px;
+    /* width: 40vh; */
     /* object-fit: contain; */
+    margin: auto 0;
 }
 .mobile__logo{
     /* background-color: yellow; */
     width: 80%;
+    /* width: 100%; */
+    /* min-width: 200px; */
     margin: auto;
 }
 .mobile__nav{
-    /* background-color: lightgreen; */
+    background-color: lightgreen;
     width: 100%;
+    /* height: 100%; */
 
-    display: flex;
+    margin: auto 0;
+
+    /* display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 .mobile__ul{
     /* background-color: peru; */
     width: 80%;
+    height: 60vh;
+    min-height: 320px;
     padding: 10px;
+    margin: auto;
 
     display: flex;
     flex-flow: column nowrap;
@@ -577,7 +565,34 @@ button{
 
 /*-------------------------------------------------*/
 
+@media(max-width: 1200px){
+
+}
+@media(max-width: 1100px){
+
+}
+@media(max-width: 1000px){
+
+}
+@media(max-width: 900px){
+
+}
+@media(max-width: 800px){
+
+}
+@media(max-width: 700px){
+
+}
+@media(max-width: 600px){
+
+}
+@media(max-width: 500px){
+
+}
 @media(max-width: 450px){
+    body{
+        overflow: auto;
+    }
     .main__grid{
         display: none;
     }
