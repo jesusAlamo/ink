@@ -285,7 +285,7 @@ button{
 
 .main{
     /* background-color: lightgreen; */
-    width: 100%;
+    /* width: 100%; */
     height: 100vh;
     padding: 10px;
 }
@@ -410,7 +410,7 @@ button{
     /* font-size: 1.9vw; */
     font-size: 60px;
     /* font-size: 3vw; */
-    font-family: 'Permanent Marker', cursive;
+    /* font-family: 'Permanent Marker', cursive; */
     font-family: 'Caveat', cursive;
     /* text-transform: uppercase; */
     /* letter-spacing: -2px; */
@@ -487,11 +487,15 @@ button{
     padding: 10px;
 
     display: none;
-    flex-flow: column nowrap;
     justify-content:space-around;
-    /* justify-content: flex-start; */
     align-items: center;
     gap: 10px;
+}
+.main__horizontal{
+    flex-flow: row nowrap;
+}
+.main__vertical{
+    flex-flow: column nowrap;
 }
 .mobile__h1{
     /* background-color: burlywood; */
@@ -505,10 +509,13 @@ button{
 }
 .mobile__logo{
     /* background-color: yellow; */
-    width: 80%;
-    /* width: 100%; */
-    /* min-width: 200px; */
     margin: auto;
+}
+.logo__horizontal{
+    width: 95%;
+}
+.logo__vertical{
+    width: 80%;
 }
 .mobile__nav{
     /* background-color: lightgreen; */
@@ -565,31 +572,116 @@ button{
 
 /*-------------------------------------------------*/
 
-@media(max-width: 1200px){
+@media(max-width: 1500px){
+    .main__area{
+        width: 400px;
+        height: 75px;
+    }
+    .main__h1{
+        width: 350px;
+        height: 350px;
+    }
+    .main__area:hover .main__dot{
+        width: 400px;
+        height: 75px;
+    }
+}
+@media(max-width: 1400px){
+    .main__area{
+        width: 350px;
+        height: 75px;
+    }
+    .main__h1{
+        width: 300px;
+        height: 300px;
+    }
+    .main__area:hover .main__dot{
+        width: 350px;
+        height: 75px;
+    }
+}
+@media(max-width: 1300px){
 
 }
+@media(max-width: 1200px){
+    .main__area{
+        width: 300px;
+        height: 75px;
+    }
+    .main__h1{
+        width: 250px;
+        height: 250px;
+    }
+    .main__area:hover .main__dot{
+        width: 300px;
+        height: 75px;
+    }
+    .main__h2{
+        font-size: 50px;
+        line-height: 76px;
+    }
+}
 @media(max-width: 1100px){
-
+    .main__area{
+        width: 250px;
+        height: 75px;
+    }
+    .main__h1{
+        width: 250px;
+        height: 250px;
+    }
+    .main__area:hover .main__dot{
+        width: 250px;
+        height: 75px;
+    }
+    .main__h2{
+        font-size: 40px;
+        line-height: 76px;
+    }
 }
 @media(max-width: 1000px){
 
 }
 @media(max-width: 900px){
-
+    .main__area{
+        width: 200px;
+        height: 75px;
+    }
+    .main__h1{
+        width: 200px;
+        height: 200px;
+    }
+    .main__area:hover .main__dot{
+        width: 200px;
+        height: 75px;
+    }
+    .main__h2{
+        font-size: 35px;
+        line-height: 76px;
+    }
 }
 @media(max-width: 800px){
 
 }
-@media(max-width: 700px){
-
+@media(max-width: 750px){
+    .main__area{
+        width: 175px;
+        height: 60px;
+    }
+    .main__h1{
+        width: 200px;
+        height: 200px;
+    }
+    .main__area:hover .main__dot{
+        width: 175px;
+        height: 60px;
+    }
+    .main__h2{
+        font-size: 30px;
+        line-height: 60px;
+    }
 }
-@media(max-width: 600px){
-
-}
-@media(max-width: 500px){
-
-}
-@media(max-width: 450px){
+@media(max-width: 675px){
     body{
         overflow: auto;
     }
@@ -598,6 +690,60 @@ button{
     }
     .main__mobile{
         display: flex;
+    }
+    .main__horizontal{
+        display: flex;
+    }
+    .main__vertical{
+        display: none;
+    }
+    .cursor{
+        display: none;
+    }
+    .corner{
+        display: none;
+    }
+}
+@media(max-width: 500px){
+    /* body{
+        overflow: auto;
+    } */
+    /* .main__grid{
+        display: none;
+    } */
+    /* .main__mobile{
+        display: flex;
+    } */
+    .main__horizontal{
+        display: none;
+    }
+    .main__vertical{
+        display: flex;
+    }
+    /* .cursor{
+        display: none;
+    } */
+    /* .corner{
+        display: none;
+    } */
+}
+
+@media(max-height: 525px){
+    body{
+        overflow: auto;
+        cursor: crosshair;
+    }
+    .main__grid{
+        display: none;
+    }
+    .main__mobile{
+        display: flex;
+    }
+    .main__horizontal{
+        display: flex;
+    }
+    .main__vertical{
+        display: none;
     }
     .cursor{
         display: none;
