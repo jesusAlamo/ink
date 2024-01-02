@@ -689,9 +689,6 @@ button{
         line-height: 4.75rem;
     }
 }
-/* @media(max-width: 1000px){
-
-} */
 @media(max-width: 900px) or (max-height: 600px){
     .corner, .corner__area{
         width: 9.375rem;
@@ -714,9 +711,6 @@ button{
         line-height: 4.75rem;
     }
 }
-/* @media(max-width: 800px){
-
-} */
 @media(max-width: 750px)  or (max-height: 525px){
     .main__area{
         width: 10.9375rem;
@@ -863,5 +857,205 @@ button{
     }
     .main__a{
         opacity: 1;
+    }
+}
+
+@media only screen and (hover: none) and (pointer: coarse) and (max-width: 1500px){
+    .main__area{
+        width: 25rem;
+        height: 4.6875rem;
+    }
+    .main__h1{
+        width: 21.875rem;
+        height: 21.875rem;
+    }
+    .main__dot{
+        width: 25rem;
+        height: 4.6875rem;
+        border-radius: 2.5rem;
+    }
+}
+@media only screen and (hover: none) and (pointer: coarse) and (max-width: 1400px){
+    .main__area{
+        width: 21.875rem;
+        height: 4.6875rem;
+    }
+    .main__h1{
+        width: 18.75rem;
+        height: 18.75rem;
+    }
+    .main__dot{
+        width: 21.875rem;
+        height: 4.6875rem;
+        border-radius: 2.5rem;
+    }
+}
+@media only screen and (hover: none) and (pointer: coarse) and (max-width: 1300px) or (max-height: 750px){
+    .corner, .corner__area{
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+}
+@media only screen and (hover: none) and (pointer: coarse) and (max-width: 1200px) or (max-height: 750px){
+    .main__area{
+        width: 18.75rem;
+        height: 4.6875rem;
+    }
+    .main__h1{
+        width: 15.625rem;
+        height: 15.625rem;
+    }
+    .main__dot{
+        width: 18.75rem;
+        height: 4.6875rem;
+        border-radius: 2.5rem;
+    }
+    .main__h2{
+        font-size: 3.125rem;
+        line-height: 4.75rem;
+    }
+}
+@media only screen and (hover: none) and (pointer: coarse) and (max-width: 1100px){
+    .main__area{
+        width: 15.625rem;
+        height: 4.6875rem;
+    }
+    .main__h1{
+        width: 15.625rem;
+        height: 15.625rem;
+    }
+    .main__dot{
+        width: 15.625rem;
+        height: 4.6875rem;
+        border-radius: 2.5rem;
+    }
+    .main__h2{
+        font-size: 2.5rem;
+        line-height: 4.75rem;
+    }
+}
+@media only screen and (hover: none) and (pointer: coarse) and (max-width: 900px) or (max-height: 600px){
+    .corner, .corner__area{
+        width: 9.375rem;
+        height: 9.375rem;
+    }
+    .main__area{
+        width: 12.5rem;
+        height: 4.6875rem;
+    }
+    .main__h1{
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+    .main__dot{
+        width: 12.5rem;
+        height: 4.6875rem;
+        border-radius: 2.5rem;
+    }
+    .main__h2{
+        font-size: 2.1875rem;
+        line-height: 4.75rem;
+    }
+}
+@media only screen and (hover: none) and (pointer: coarse) and (max-width: 750px)  or (max-height: 525px){
+    .main__area{
+        width: 10.9375rem;
+        height: 3.75rem;
+    }
+    .main__h1{
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+    .main__dot{
+        width: 10.9375rem;
+        height: 3.75rem;
+        border-radius: 2.5rem;
+    }
+    .main__h2{
+        font-size: 1.875rem;
+        line-height: 3.75rem;
+    }
+}
+/* @media only screen and (hover: none) and (pointer: coarse) and (max-width: 675px){
+    body{
+        overflow: auto;
+    }
+    .cursor{
+        display: none;
+    }
+    .corner{
+        display: none;
+    }
+    .main__grid{
+        display: none;
+    }
+    .main__mobile{
+        display: flex;
+    }
+    .main__horizontal{
+        display: flex;
+    }
+    .main__vertical{
+        display: none;
+    }
+    .delay__first{
+        animation: dot__mobile 10s 0s ease infinite both;
+    }
+    .delay__second{
+        animation: dot__mobile 10s 0.5s ease infinite both;
+    }
+    .delay__third{
+        animation: dot__mobile 10s 1s ease infinite both;
+    }
+    .delay__fourth{
+        animation: dot__mobile 10s 1.5s ease infinite both;
+    }
+} */
+@media only screen and (hover: none) and (pointer: coarse) and (max-width: 500px){
+    /* body{
+        overflow: auto;
+    } */
+    /* .main__grid{
+        display: none;
+    } */
+    /* .main__mobile{
+        display: flex;
+    } */
+    .main__horizontal{
+        display: none;
+    }
+    .main__vertical{
+        display: flex;
+    }
+    /* .cursor{
+        display: none;
+    } */
+    /* .corner{
+        display: none;
+    } */
+}
+
+@media(max-height: 450px){
+    body{
+        overflow: auto;
+        cursor: crosshair;
+    }
+    .cursor{
+        display: none;
+    }
+    .corner{
+        display: none;
+    }
+    .main__grid{
+        display: none;
+    }
+    .main__mobile{
+        display: flex;
+    }
+    .main__horizontal{
+        display: flex;
+    }
+    .main__vertical{
+        display: none;
     }
 }
