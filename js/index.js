@@ -8,10 +8,12 @@ console.log( cursor )
 
     window.addEventListener( 'mousemove' , function( e ){
 
-        console.log( 'e.clientX' )
-        console.log( e.clientX )
-        console.log( 'e.clientY' )
-        console.log( e.clientY )
+        console.clear()
+
+        // console.log( 'e.clientX' )
+        // console.log( e.clientX )
+        // console.log( 'e.clientY' )
+        // console.log( e.clientY )
 
         const cursorX = e.clientX - 30
         const cursorY = e.clientY - 30

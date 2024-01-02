@@ -55,8 +55,8 @@ button{
 
 .cursor{
     background-color: white;
-    width: 60px;
-    min-height: 60px;
+    width: 3.75rem;
+    min-height: 3.75rem;
     border-radius: 50%;
     display: block;
 
@@ -73,17 +73,17 @@ button{
     /* background-color: lightcoral; */
     /* background-color: lightgreen; */
     /* background-color: lightskyblue; */
-    width: 20px;
-    height: 20px;
-    border: 1px solid black;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: .0625rem solid black;
     border-radius: 50%;
 }
 
 .corner{
     /* background-color: orange; */
     /* border: 2px dotted red; */
-    width: 250px;
-    height: 250px;
+    width: 15.625rem;
+    height: 15.625rem;
 
     position: fixed;
 }
@@ -113,8 +113,8 @@ button{
 }
 .corner__area{
     background-color: white;
-    width: 250px;
-    height: 250px;
+    width: 15.625rem;
+    height: 15.625rem;
 
     position: absolute;
     top: 0;
@@ -171,7 +171,7 @@ button{
 .corner__img{
     /* background-color: rgba(122, 217, 255, 0.507); */
     width: 80%;
-    padding: 10px;
+    padding: .625rem;
 
     position: absolute;
 
@@ -287,7 +287,7 @@ button{
     /* background-color: lightgreen; */
     /* width: 100%; */
     height: 100vh;
-    padding: 10px;
+    padding: .625rem;
 }
 .main__grid{
     /* background-color: blue; */
@@ -297,11 +297,11 @@ button{
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 1.25rem;
 }
 .main__cell{
     /* background-color: lime; */
-    padding: 10px;
+    padding: .625rem;
 
     /* z-index: 1; */
 
@@ -317,15 +317,15 @@ button{
 }
 .main__area{
     /* background-color: yellow; */
-        width: 450px;
-        height: 75px;
+        width: 28.125rem;
+        height: 4.6875rem;
     /* width: 24vw;
     height: 4vw; */
     /* padding: 10px; */
 
     /* border: 2px dotted red; */
     /* border-radius: 50%; */
-    border-radius: 40px;
+    border-radius: 2.5rem;
 
     position: relative;
 
@@ -336,8 +336,8 @@ button{
 }
 .main__remember{
     background-color: white;
-        width: 20px;
-        height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     /* width: 1vw;
     height: 1vw; */
 
@@ -348,8 +348,8 @@ button{
 }
 .main__dot{
     background-color: white;
-        width: 20px;
-        height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     /* width: 1vw;
     height: 1vw; */
 
@@ -391,12 +391,12 @@ button{
 } 
 .main__a{
     /* background-color: rgba(255, 255, 255, 0.671); */
-    width: 450px;
+    width: 28.125rem;
     /* width: 24vw; */
     /* border: 2px dotted yellow; */
     /* padding: 2px 10px; */
     /* padding: 0.1vw 0.5vw; */
-    border-radius: 30px;
+    border-radius: 1.875rem;
     
     position: absolute;
 
@@ -408,23 +408,23 @@ button{
 }
 .main__h2{
     /* font-size: 1.9vw; */
-    font-size: 60px;
+    font-size: 3.75rem;
     /* font-size: 3vw; */
     /* font-family: 'Permanent Marker', cursive; */
     font-family: 'Caveat', cursive;
     /* text-transform: uppercase; */
     /* letter-spacing: -2px; */
-    line-height: 76px;
+    line-height: 4.75rem;
     /* line-height: 3.8vw; */
     text-align: center;
     font-weight: 900;
 }
 .main__area:hover .main__dot{
-    border-radius: 40px;
+    border-radius: 2.5rem;
     /* transform: scale(5); */
     /* transform: scaleX(15) scaleY(5); */
-    width: 450px;
-    height: 75px;
+    width: 28.125rem;
+    height: 4.6875rem;
     /* width: 24vw;
     height: 4vw; */
 }
@@ -433,11 +433,11 @@ button{
 }
 .main__h1{
     /* background-color: yellow; */
-    width: 400px;
-    height: 400px;
+    width: 25rem;
+    height: 25rem;
     /* width: 20vw;
     height: 20vw; */
-    padding: 10px;
+    padding: .625rem;
 
     /* border: 2px dotted red; */
     border-radius: 50%;
@@ -484,12 +484,12 @@ button{
     /* background-color: blue; */
     width: 100%;
     min-height: 100%;
-    padding: 10px;
+    padding: .625rem;
 
     display: none;
     justify-content:space-around;
     align-items: center;
-    gap: 10px;
+    gap: .625rem;
 }
 .main__horizontal{
     flex-flow: row nowrap;
@@ -502,17 +502,19 @@ button{
     /* width: 80%; */
     /* width: 70%; */
     width: 100%;
-    min-width: 200px;
+    min-width: 12.5rem;
     /* width: 40vh; */
     /* object-fit: contain; */
     margin: auto 0;
 }
 .mobile__logo{
     /* background-color: yellow; */
+    max-width: 20rem;
+    max-height: 20rem;
     margin: auto;
 }
 .logo__horizontal{
-    width: 95%;
+    width: 85%;
 }
 .logo__vertical{
     width: 80%;
@@ -533,30 +535,30 @@ button{
     /* background-color: peru; */
     width: 80%;
     height: 50vh;
-    min-height: 320px;
-    padding: 10px;
+    min-height: 20rem;
+    padding: .625rem;
     margin: auto;
 
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
-    gap:30px;
+    gap: 1.875rem;
 }
 .mobile__li{
     background-color: white;
     /* background-color: purple; */
     width: 95%;
-    min-width: 200px;
-    border-radius: 30px;
+    min-width: 12.5rem;
+    border-radius: 1.875rem;
 
     z-index: 1;
 }
 .mobile__a{
     background-color: rgba(255, 255, 255, 0);
     width: 100%;
-    padding: 10px;
-    border-radius: 30px;
+    padding: .625rem;
+    border-radius: 1.875rem;
 }
 .mobile__h2{
     font-size: 2rem;
@@ -574,111 +576,118 @@ button{
 
 @media(max-width: 1500px){
     .main__area{
-        width: 400px;
-        height: 75px;
+        width: 25rem;
+        height: 4.6875rem;
     }
     .main__h1{
-        width: 350px;
-        height: 350px;
+        width: 21.875rem;
+        height: 21.875rem;
     }
     .main__area:hover .main__dot{
-        width: 400px;
-        height: 75px;
+        width: 25rem;
+        height: 4.6875rem;
     }
 }
 @media(max-width: 1400px){
     .main__area{
-        width: 350px;
-        height: 75px;
+        width: 21.875rem;
+        height: 4.6875rem;
     }
     .main__h1{
-        width: 300px;
-        height: 300px;
+        width: 18.75rem;
+        height: 18.75rem;
     }
     .main__area:hover .main__dot{
-        width: 350px;
-        height: 75px;
+        width: 21.875rem;
+        height: 4.6875rem;
     }
 }
-@media(max-width: 1300px){
-
+@media(max-width: 1300px) or (max-height: 750px){
+    .corner, .corner__area{
+        width: 12.5rem;
+        height: 12.5rem;
+    }
 }
-@media(max-width: 1200px){
+@media(max-width: 1200px) or (max-height: 750px){
     .main__area{
-        width: 300px;
-        height: 75px;
+        width: 18.75rem;
+        height: 4.6875rem;
     }
     .main__h1{
-        width: 250px;
-        height: 250px;
+        width: 15.625rem;
+        height: 15.625rem;
     }
     .main__area:hover .main__dot{
-        width: 300px;
-        height: 75px;
+        width: 18.75rem;
+        height: 4.6875rem;
     }
     .main__h2{
-        font-size: 50px;
-        line-height: 76px;
+        font-size: 3.125rem;
+        line-height: 4.75rem;
     }
 }
 @media(max-width: 1100px){
     .main__area{
-        width: 250px;
-        height: 75px;
+        width: 15.625rem;
+        height: 4.6875rem;
     }
     .main__h1{
-        width: 250px;
-        height: 250px;
+        width: 15.625rem;
+        height: 15.625rem;
     }
     .main__area:hover .main__dot{
-        width: 250px;
-        height: 75px;
+        width: 15.625rem;
+        height: 4.6875rem;
     }
     .main__h2{
-        font-size: 40px;
-        line-height: 76px;
+        font-size: 2.5rem;
+        line-height: 4.75rem;
     }
 }
-@media(max-width: 1000px){
+/* @media(max-width: 1000px){
 
-}
-@media(max-width: 900px){
+} */
+@media(max-width: 900px) or (max-height: 600px){
+    .corner, .corner__area{
+        width: 9.375rem;
+        height: 9.375rem;
+    }
     .main__area{
-        width: 200px;
-        height: 75px;
+        width: 12.5rem;
+        height: 4.6875rem;
     }
     .main__h1{
-        width: 200px;
-        height: 200px;
+        width: 12.5rem;
+        height: 12.5rem;
     }
     .main__area:hover .main__dot{
-        width: 200px;
-        height: 75px;
+        width: 12.5rem;
+        height: 4.6875rem;
     }
     .main__h2{
-        font-size: 35px;
-        line-height: 76px;
+        font-size: 2.1875rem;
+        line-height: 4.75rem;
     }
 }
-@media(max-width: 800px){
+/* @media(max-width: 800px){
 
-}
-@media(max-width: 750px){
+} */
+@media(max-width: 750px)  or (max-height: 525px){
     .main__area{
-        width: 175px;
-        height: 60px;
+        width: 10.9375rem;
+        height: 3.75rem;
     }
     .main__h1{
-        width: 200px;
-        height: 200px;
+        width: 12.5rem;
+        height: 12.5rem;
     }
     .main__area:hover .main__dot{
-        width: 175px;
-        height: 60px;
+        width: 10.9375rem;
+        height: 3.75rem;
     }
     .main__h2{
-        font-size: 30px;
-        line-height: 60px;
+        font-size: 1.875rem;
+        line-height: 3.75rem;
     }
 }
 @media(max-width: 675px){
@@ -728,7 +737,7 @@ button{
     } */
 }
 
-@media(max-height: 525px){
+@media(max-height: 450px){
     body{
         overflow: auto;
         cursor: crosshair;
@@ -750,5 +759,32 @@ button{
     }
     .corner{
         display: none;
+    }
+}
+
+/* Detección de dispositivo touchscreen */
+
+@media only screen and (hover: none) and (pointer: coarse){
+    a{
+        cursor: none;
+    }
+    body{
+        /* overflow: auto; */
+        cursor: none;
+    }
+    button{
+        cursor: none;
+    }
+    .cursor{
+        display: none;
+    }
+    /* .corner{
+        display: none;
+    } */
+    .corner__area{
+        display: none;
+    }
+    .corner__img{
+        cursor: none;
     }
 }
