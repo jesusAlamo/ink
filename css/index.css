@@ -232,50 +232,7 @@ button{
     bottom: 0;
     right: 0;
 }
-@keyframes rgb__white{
-    0%{
-        /* background-color: rgba(255, 0, 0, 0.2); */
-        /* filter: hue-rotate(0deg) saturate(100%) brightness(50%); */
-        background-image: url(../assets/icon-drop-white-red.png);
-    }
-    33%{
-        /* background-color: rgba(0, 255, 0, 0.2); */
-        /* filter: hue-rotate(120deg) saturate(1000%) brightness(1000%); */
-        background-image: url(../assets/icon-drop-white-green.png);
-    }
-    66%{
-        /* background-color: rgba(0, 0, 255, 0.2); */
-        /* filter: hue-rotate(60deg) saturate(1000%) brightness(500%); */
-        background-image: url(../assets/icon-drop-white-blue.png);
-    }
-    100%{
-        /* background-color: rgba(255, 0, 0, 0.2); */
-        /* filter: hue-rotate(50deg) saturate(50%) brightness(50%); */
-        background-image: url(../assets/icon-drop-white-red.png);
-    }
-}
-@keyframes rgb__black{
-    0%{
-        /* background-color: rgba(255, 0, 0, 0.2); */
-        /* filter: hue-rotate(0deg) saturate(100%) brightness(50%); */
-        background-image: url(../assets/icon-drop-black-red.png);
-    }
-    33%{
-        /* background-color: rgba(0, 255, 0, 0.2); */
-        /* filter: hue-rotate(120deg) saturate(1000%) brightness(1000%); */
-        background-image: url(../assets/icon-drop-black-green.png);
-    }
-    66%{
-        /* background-color: rgba(0, 0, 255, 0.2); */
-        /* filter: hue-rotate(60deg) saturate(1000%) brightness(500%); */
-        background-image: url(../assets/icon-drop-black-blue.png);
-    }
-    100%{
-        /* background-color: rgba(255, 0, 0, 0.2); */
-        /* filter: hue-rotate(50deg) saturate(50%) brightness(50%); */
-        background-image: url(../assets/icon-drop-black-red.png);
-    }
-}
+
 
 /*-------------------------------------------------*/
 
@@ -361,34 +318,18 @@ button{
     transition: .2s all 0s ease;
 }
 .delay__first{
-    animation: remember__animation 10s 0s ease infinite both;
+    animation: dot__remember 10s 0s ease infinite both;
 }
 .delay__second{
-    animation: remember__animation 10s 0.5s ease infinite both;
+    animation: dot__remember 10s 0.5s ease infinite both;
 }
 .delay__third{
-    animation: remember__animation 10s 1s ease infinite both;
+    animation: dot__remember 10s 1s ease infinite both;
 }
 .delay__fourth{
-    animation: remember__animation 10s 1.5s ease infinite both;
+    animation: dot__remember 10s 1.5s ease infinite both;
 }
-@keyframes remember__animation{
-    0%{
-        transform: scale(1);
-    }
-    1%{
-        transform: scale(1);
-    }
-    4%{
-        transform: scale(2);
-    }
-    7%{
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(1);
-    }
-} 
+
 .main__a{
     /* background-color: rgba(255, 255, 255, 0.671); */
     width: 28.125rem;
@@ -453,32 +394,6 @@ button{
 
     animation: logo__remember 20s 2s ease infinite both;
 }
-@keyframes logo__remember{
-    0%{
-        transform: scale(1);
-    }
-    2.5%{
-        transform: scale(0.8) rotate(10deg);
-    }
-    7.5%{
-        transform: scale(1.5) rotate(-720deg);
-    }
-    9%{
-        transform: scale(1.7) rotate(-720deg);
-    }
-    10%{
-        transform: scale(1.7) rotate(-720deg);
-    }
-    12.5%{
-        transform: scale(1.5) rotate(-720deg);
-    }
-    25%{
-        transform: scale(1) rotate(-720deg);
-    }
-    100%{
-        transform: scale(1) rotate(-720deg);
-    }
-}
 
 .main__mobile{
     /* background-color: blue; */
@@ -512,6 +427,8 @@ button{
     max-width: 20rem;
     max-height: 20rem;
     margin: auto;
+
+    animation: logo__mobile 20s 2s ease infinite both;
 }
 .logo__horizontal{
     width: 85%;
@@ -569,8 +486,136 @@ button{
 }
 
 /*-------------------------------------------------*/
-
-
+@keyframes rgb__white{
+    0%{
+        /* background-color: rgba(255, 0, 0, 0.2); */
+        /* filter: hue-rotate(0deg) saturate(100%) brightness(50%); */
+        background-image: url(../assets/icon-drop-white-red.png);
+    }
+    33%{
+        /* background-color: rgba(0, 255, 0, 0.2); */
+        /* filter: hue-rotate(120deg) saturate(1000%) brightness(1000%); */
+        background-image: url(../assets/icon-drop-white-green.png);
+    }
+    66%{
+        /* background-color: rgba(0, 0, 255, 0.2); */
+        /* filter: hue-rotate(60deg) saturate(1000%) brightness(500%); */
+        background-image: url(../assets/icon-drop-white-blue.png);
+    }
+    100%{
+        /* background-color: rgba(255, 0, 0, 0.2); */
+        /* filter: hue-rotate(50deg) saturate(50%) brightness(50%); */
+        background-image: url(../assets/icon-drop-white-red.png);
+    }
+}
+@keyframes rgb__black{
+    0%{
+        /* background-color: rgba(255, 0, 0, 0.2); */
+        /* filter: hue-rotate(0deg) saturate(100%) brightness(50%); */
+        background-image: url(../assets/icon-drop-black-red.png);
+    }
+    33%{
+        /* background-color: rgba(0, 255, 0, 0.2); */
+        /* filter: hue-rotate(120deg) saturate(1000%) brightness(1000%); */
+        background-image: url(../assets/icon-drop-black-green.png);
+    }
+    66%{
+        /* background-color: rgba(0, 0, 255, 0.2); */
+        /* filter: hue-rotate(60deg) saturate(1000%) brightness(500%); */
+        background-image: url(../assets/icon-drop-black-blue.png);
+    }
+    100%{
+        /* background-color: rgba(255, 0, 0, 0.2); */
+        /* filter: hue-rotate(50deg) saturate(50%) brightness(50%); */
+        background-image: url(../assets/icon-drop-black-red.png);
+    }
+}
+@keyframes dot__remember{
+    0%{
+        transform: scale(1);
+    }
+    1%{
+        transform: scale(1);
+    }
+    4%{
+        transform: scale(2);
+    }
+    7%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes dot__mobile{
+    0%{
+        transform: scale(1);
+    }
+    1%{
+        transform: scale(1);
+    }
+    4%{
+        transform: scale(1.3);
+    }
+    7%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes logo__remember{
+    0%{
+        transform: scale(1);
+    }
+    2.5%{
+        transform: scale(0.8) rotate(10deg);
+    }
+    7.5%{
+        transform: scale(1.5) rotate(-720deg);
+    }
+    9%{
+        transform: scale(1.7) rotate(-720deg);
+    }
+    10%{
+        transform: scale(1.7) rotate(-720deg);
+    }
+    12.5%{
+        transform: scale(1.5) rotate(-720deg);
+    }
+    25%{
+        transform: scale(1) rotate(-720deg);
+    }
+    100%{
+        transform: scale(1) rotate(-720deg);
+    }
+}
+@keyframes logo__mobile{
+    0%{
+        transform: scale(1);
+    }
+    2.5%{
+        transform: scale(0.8) rotate(10deg);
+    }
+    7.5%{
+        transform: scale(1.25) rotate(-720deg);
+    }
+    9%{
+        transform: scale(1.4) rotate(-720deg);
+    }
+    10%{
+        transform: scale(1.4) rotate(-720deg);
+    }
+    12.5%{
+        transform: scale(1.25) rotate(-720deg);
+    }
+    25%{
+        transform: scale(1) rotate(-720deg);
+    }
+    100%{
+        transform: scale(1) rotate(-720deg);
+    }
+}
 
 /*-------------------------------------------------*/
 
@@ -694,6 +739,12 @@ button{
     body{
         overflow: auto;
     }
+    .cursor{
+        display: none;
+    }
+    .corner{
+        display: none;
+    }
     .main__grid{
         display: none;
     }
@@ -706,11 +757,17 @@ button{
     .main__vertical{
         display: none;
     }
-    .cursor{
-        display: none;
+    .delay__first{
+        animation: dot__mobile 10s 0s ease infinite both;
     }
-    .corner{
-        display: none;
+    .delay__second{
+        animation: dot__mobile 10s 0.5s ease infinite both;
+    }
+    .delay__third{
+        animation: dot__mobile 10s 1s ease infinite both;
+    }
+    .delay__fourth{
+        animation: dot__mobile 10s 1.5s ease infinite both;
     }
 }
 @media(max-width: 500px){
@@ -742,6 +799,12 @@ button{
         overflow: auto;
         cursor: crosshair;
     }
+    .cursor{
+        display: none;
+    }
+    .corner{
+        display: none;
+    }
     .main__grid{
         display: none;
     }
@@ -752,12 +815,6 @@ button{
         display: flex;
     }
     .main__vertical{
-        display: none;
-    }
-    .cursor{
-        display: none;
-    }
-    .corner{
         display: none;
     }
 }
@@ -786,5 +843,25 @@ button{
     }
     .corner__img{
         cursor: none;
+    }
+    .main__dot{
+        border-radius: 2.5rem;
+        width: 28.125rem;
+        height: 4.6875rem;
+    }
+    .delay__first{
+        animation: dot__mobile 10s 0s ease infinite both;
+    }
+    .delay__second{
+        animation: dot__mobile 10s 0.5s ease infinite both;
+    }
+    .delay__third{
+        animation: dot__mobile 10s 1s ease infinite both;
+    }
+    .delay__fourth{
+        animation: dot__mobile 10s 1.5s ease infinite both;
+    }
+    .main__a{
+        opacity: 1;
     }
 }
