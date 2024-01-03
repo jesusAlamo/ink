@@ -48,6 +48,7 @@ body{
     overflow: hidden;
 }
 button{
+    background-color: rgba(0, 0, 0, 0);
     cursor: crosshair;
 }
 
@@ -87,25 +88,25 @@ button{
 
     position: fixed;
 }
-.topleft{
+.top__left{
     border-bottom-right-radius: 60%;
 
     top: 0;
     left: 0;
 }
-.topright{
+.top__right{
     border-bottom-left-radius: 60%;
 
     top: 0;
     right: 0;
 }
-.bottomleft{
+.bottom__left{
     border-top-right-radius: 60%;
 
     bottom: 0;
     left: 0;
 }
-.bottomright{
+.bottom__right{
     border-top-left-radius: 60%;
 
     bottom: 0;
@@ -122,9 +123,9 @@ button{
 
     cursor: crosshair;
 
-    /* transition: .2s all 0s ease; */
+    transition: .2s all 0s ease;    /* el efecto no sale como se espera */
 }
-.topl{
+.eye__hide{
     border-bottom-right-radius: 60%;
 
     top: 0;
@@ -132,10 +133,10 @@ button{
 
     transform: translateX(-100%) translateY(-100%);
 }
-.corner:hover .topl{
+.corner:hover .eye__hide{
     transform: translateX(0%) translateY(0%);
 }
-.topr{
+.drop__hide{
     border-bottom-left-radius: 60%;
 
     top: 0;
@@ -143,10 +144,10 @@ button{
 
     transform: translateX(100%) translateY(-100%);
 }
-.corner:hover .topr{
+.corner:hover .drop__hide{
     transform: translateX(0%) translateY(0%);
 }
-.bottoml{
+.linkedin__hide{
     border-top-right-radius: 60%;
 
     bottom: 0;
@@ -154,10 +155,10 @@ button{
 
     transform: translateX(-100%) translateY(100%);
 }
-.corner:hover .bottoml{
+.corner:hover .linkedin__hide{
     transform: translateX(0%) translateY(0%);
 }
-.bottomr{
+.github__hide{
     border-top-left-radius: 60%;
 
     bottom: 0;
@@ -165,7 +166,7 @@ button{
 
     transform: translateX(100%) translateY(100%);
 }
-.corner:hover .bottomr{
+.corner:hover .github__hide{
     transform: translateX(0%) translateY(0%);
 }
 .corner__img{
@@ -177,11 +178,11 @@ button{
 
     cursor: crosshair;
 }
-.tleft{
+.eye__img{
     top: 0;
     left: 0;
 }
-.tleft__black{
+.eye__black{
     /* background-color: rgba(122, 217, 255, 0.507); */
     /* width: 250px; */
     /* height: 250px; */
@@ -195,12 +196,12 @@ button{
 
     transition: 0.2s all 0.05s ease;
 }
-.topl:hover .tleft__black{
+.eye__hide:hover .eye__black{
     /* background-color: brown; */
     opacity: 1;
     /* transform: translateX(0%) translateY(0%); */
 }
-.tright__white, .tright__black{
+.drop__img{
     height: 80%;
     /* background-image: url(../assets/icon-drop-white.png); */
     background-repeat: no-repeat;
@@ -212,7 +213,7 @@ button{
 
     animation: rgb__white 5s 0s ease infinite both;
 }
-.tright__black{
+.drop__black{
     height: 80%;
     /* background-image: url(../assets/icon-drop-black.png); */
     background-repeat: no-repeat;
@@ -224,11 +225,11 @@ button{
 
     animation: rgb__black 5s 0s ease infinite both;
 }
-.bleft{
+.linkedin__img{
     bottom: 0;
     left: 0;
 }
-.bright{
+.github__img{
     bottom: 0;
     right: 0;
 }
@@ -860,7 +861,7 @@ button{
     }
 }
 
-@media only screen and (hover: none) and (pointer: coarse) and (max-width: 1500px){
+/* @media only screen and (hover: none) and (pointer: coarse) and (max-width: 1500px){
     .main__area{
         width: 25rem;
         height: 4.6875rem;
@@ -975,7 +976,7 @@ button{
         font-size: 1.875rem;
         line-height: 3.75rem;
     }
-}
+} */
 /* @media only screen and (hover: none) and (pointer: coarse) and (max-width: 675px){
     body{
         overflow: auto;
@@ -1011,28 +1012,13 @@ button{
         animation: dot__mobile 10s 1.5s ease infinite both;
     }
 } */
-@media only screen and (hover: none) and (pointer: coarse) and (max-width: 500px){
-    /* body{
-        overflow: auto;
-    } */
-    /* .main__grid{
-        display: none;
-    } */
-    /* .main__mobile{
-        display: flex;
-    } */
+/* @media only screen and (hover: none) and (pointer: coarse) and (max-width: 500px){
     .main__horizontal{
         display: none;
     }
     .main__vertical{
         display: flex;
     }
-    /* .cursor{
-        display: none;
-    } */
-    /* .corner{
-        display: none;
-    } */
 }
 
 @media(max-height: 450px){
@@ -1058,4 +1044,4 @@ button{
     .main__vertical{
         display: none;
     }
-}
+} */
