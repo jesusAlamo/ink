@@ -238,7 +238,9 @@ button{
 
 .header{
     /* background-color: burlywood; */
-    width: 100%;
+    /* width: 100%; */
+    /* width: 80%; */
+    width: 1000px;
     /* min-height: 11.875rem; */
     min-height: 20vh;
     padding: .625rem;
@@ -247,10 +249,16 @@ button{
     flex-flow: row nowrap;
     justify-content: center;
     align-items: flex-end;
+
+    position: fixed;
+    top: 0;
+    left: calc( 50% - 1000px / 2 );
 }
 .header__nav{
     /* background-color: green; */
-    width: 70%;
+    /* width: 70%; */
+    width: 100%;
+    /* width: 800px; */
     padding: .625rem;
 }
 .header__ul{
@@ -404,7 +412,8 @@ button{
 .main__hero{
     /* background-color: lightgreen; */
     /* background-color: rgba(0, 0, 0, 0); */
-    width: 100%;
+    /* width: 100%; */
+    width: 1000px;
     /* height: 80vh; */
     min-height:550px;
     /* padding: 4.5rem .625rem; */
@@ -416,7 +425,11 @@ button{
     justify-content: flex-start;
     align-items: center; */
 
-    position: relative;
+    position: fixed;
+    top: calc( 50% - 550px / 2 );
+    left: calc( 50% - 1000px / 2 );
+
+    /* position: relative; */
     /* z-index: -1; */
 }
 
@@ -434,7 +447,7 @@ button{
     /* margin: auto; */
 
     position: absolute;
-    top: 10px;
+    /* top: 10px; */
     top: calc( 50% - 400px / 2 );
     left: calc( 50% - 1000px / 2 );
 

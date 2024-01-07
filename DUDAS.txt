@@ -6,6 +6,7 @@ DUDAS:
 - slider: ¿cómo hacer que se vea una u otra web?
 - carrousel: ¿cómo da la vuelta al carrusel sin volver al principio?
 
+	-- NUEVAS --
 
 - .cursor/.corner: donde posicionarlos dentro del html?
 - Hover: ¿En un mismo :hover puedo meter varios "cambios"?
@@ -24,4 +25,4 @@ PROBLEMAS:
 
 - El modo tactil de movil y tableta interfieren con los .corner!!! ==> ancho 1345px da problemas en modo touch
 - En explorador movil, el tamaño 100vh con el marco del cuadro de búsqueda, fastidia la visualización.
-- el efecto de las esquinas!! :((
+- el efecto de las esquinas!! :(( --> se podrá solucionar con position fixed?
