@@ -8,22 +8,27 @@ DUDAS:
 
 	-- NUEVAS --
 
-- .cursor/.corner: donde posicionarlos dentro del html?
-- Hover: ¿En un mismo :hover puedo meter varios "cambios"?
-- responsive: ¿se puede tener 2x h1, uno para cada responsive (formato ordena/formato movil)?
-- fixed: ¿por qué si opacity=0 se situa por encima de fixed?
-- background-image en drop: desaparece en movil en vista de ordenador y no sé hacer una transición suave
-- error MIME: qué es? no me aclaro con la info de internet --> solucionado!! qué rel se pone a un .html para linkar otro .html? (solucionado?) --> hace falta meter las otras webs propias en el head del .html si ya se llaman después en sus respectivos "a"?
-- @media: se puede meter un @media dentro de otro @media??
-- cómo meto un div dentro de un button?? --> solucionado, pero no me deja clickar sin hover para modo touch (tendré que cambiar el modo touch
-- está bien empleado en @media para modo touch o es chapuza/guarrería?
-- about: si pongo li como relative, con absolute en los .header__img se me descuadra todo y no averiguo el porque, si .header__img no tiene position absolute va algo mejor
-- no tengo ningún id, como enlazo a otra sección que se activa con java?
+- fixed: ¿por qué si opacity=0 se situa por encima de fixed? --> no pregunté
+- background-image en drop: desaparece en movil en vista de ordenador y no sé hacer una transición suave --> no pregunté
+- error MIME: qué es? no me aclaro con la info de internet --> solucionado!! qué rel se pone a un .html para linkar otro .html? (solucionado?) --> hace falta meter las otras webs propias en el head del .html si ya se llaman después en sus respectivos "a"? --> no pregunté
+- cómo meto un div dentro de un button?? --> solucionado, pero no me deja clickar sin hover para modo touch (tendré que cambiar el modo touch) --> no pregunté
+
+
+
+RESUELTAS:
+
+- .cursor/.corner: donde posicionarlos dentro del html? --> libre
+- Hover: ¿En un mismo :hover puedo meter varios "cambios"? --> no
+- responsive: ¿se puede tener 2x h1, uno para cada responsive (formato ordena/formato movil)? --> no, reaprovechar lo que hay, pero si no, como está valdría siempre que solo haya 1x h1
+- @media: se puede meter un @media dentro de otro @media?? --> no, usar and, or, etc.
+- está bien empleado en @media para modo touch o es chapuza/guarrería? --> mejor con JavaScript
+- about: si pongo li como relative, con absolute en los .header__img se me descuadra todo y no averiguo el porque, si .header__img no tiene position absolute va algo mejor --> trabajar los tamaños, es decir, calentarse la cabeza otro rato... :'(
+- no tengo ningún id, como enlazo a otra sección que se activa con java? --> replantear la web, tal vez en vertical y con ids (#) ir a cada sección mediante la pulsación de botón (con "a" ??), parece más fácil
 
 
 
 PROBLEMAS:
 
 - El modo tactil de movil y tableta interfieren con los .corner!!! ==> ancho 1345px da problemas en modo touch
-- En explorador movil, el tamaño 100vh con el marco del cuadro de búsqueda, fastidia la visualización.
+x- En explorador movil, el tamaño 100vh con el marco del cuadro de búsqueda, fastidia la visualización.
 - el efecto de las esquinas!! :(( --> se podrá solucionar con position fixed?
