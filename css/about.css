@@ -237,7 +237,7 @@ button{
 /*-------------------------------------------------*/
 
 .header{
-    background-color: burlywood;
+    /* background-color: burlywood; */
     width: 100%;
     /* min-height: 11.875rem; */
     min-height: 20vh;
@@ -249,13 +249,14 @@ button{
     align-items: flex-end;
 }
 .header__nav{
-    background-color: green;
+    /* background-color: green; */
     width: 70%;
     padding: .625rem;
 }
 .header__ul{
-    background-color: lime;
+    /* background-color: lime; */
     width: 700px;
+    min-height: 100px;
     margin: 0 auto ;
     padding: .625rem;
 
@@ -266,7 +267,7 @@ button{
     gap: 4rem;
 }
 .header__li{
-    background-color: yellow;
+    /* background-color: yellow; */
     /* width: 100px;
     height: 100px; */
     border-radius: 50%;
@@ -278,7 +279,7 @@ button{
     justify-content: center;
     align-items: center;
 }
-/* .header__circle{
+.header__circle{
     background-color: white;
     width: 100px;
     height: 100px;
@@ -298,7 +299,7 @@ button{
     border: 4px solid white;
 
     opacity: 1;
-} */
+}
 .header__btn{
     background-color: black;
     background-color: rgba(0, 0, 0, 0);
@@ -308,13 +309,33 @@ button{
     padding: .625rem;
     border-radius: 50%;
 
+    /* background-image: url(../assets/icon-profile-white.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain; */
+
+    position: absolute;
+    top: 0;
+
     /* opacity: 1; */
 
-    transition: .2s all 0s ease;
+    /* transition: .2s all 0s ease; */
+}
+.header__btn:hover{
+    border: 2px dashed white;
+    animation: circles 150s linear infinite both;
+}
+@keyframes circles{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(3600deg);
+    }
 }
 .header__btn.active{
     background-color: rgba(255, 255, 255, 0);
-    background-color: red;
+    /* background-color: red; */
     width: 100px;
     height: 100px;
 
@@ -322,10 +343,17 @@ button{
 
     font-weight: bold;
     border: 4px solid white;
+
+    animation: half__show 0.5s 0s ease 1 backwards;
 }
 .header__img{
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
+    width: 100px;
+    height: 100px;
+
+    /* position: absolute; */
+    /* top: 0; */
 
     /* cursor: crosshair; */
 
@@ -337,6 +365,17 @@ button{
     min-height: 2px;
 
     animation: grow 1.2s 0s ease 1 backwards;
+}
+@keyframes half__show{
+    0%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 @keyframes show{
     0%{
@@ -360,12 +399,15 @@ button{
 
 /*-------------------------------------------------*/
 
-.main{
-    background-color: lightgreen;
+.main{}
+.main__hero{
+    /* background-color: lightgreen; */
     width: 100%;
     /* height: 80vh; */
+    min-height:550px;
     /* padding: 4.5rem .625rem; */
-    margin: auto;
+    padding: 1rem;
+    /* margin: auto; */
 
     /* display: flex;
     flex-flow: row nowrap;
@@ -374,20 +416,24 @@ button{
 
     position: relative;
 }
-.main__section:first-child{
-    position: static;
-}
+
 .main__section{
-    background-color: blue;
+    /* background-color: blue; */
     /* width: 80%;
     max-width: 1200px;
     min-height: 400px; */
     /* width: 82%; */
     width: 100%;
     max-width: 1000px;
+    min-height: 400px;
     /* min-height: 100vh; */
-    padding: .625rem;
-    margin: auto;
+    /* padding: .625rem; */
+    /* margin: auto; */
+
+    position: absolute;
+    top: 10px;
+    top: calc( 50% - 400px / 2 );
+    left: calc( 50% - 1000px / 2 );
 
     display: flex;
     flex-flow: row nowrap;
@@ -395,16 +441,22 @@ button{
     align-items: center;
     gap: 10px;
 
-    position: absolute;
-    top: 0;
+    
 
-    transition: opacity .5s ease;
-    opacity: 1;
+    /* transition: opacity .5s ease; */
+    opacity: 0;
 
-    /* animation: view 1s 0s ease 1 backwards; */
+    animation: view 1s 0s ease 1 backwards;
 }
+/* .main__section:first-child{
+    position: static; */
+    /* opacity: 1; */
+/* } */
 .main__section.active{
     opacity: 1;
+
+    /* padding: .625rem; */
+    /* left: calc( 50% - 1000px / 2 ); */
 
     /* animation: view 1s 0s ease 1 backwards; */
 }
@@ -418,7 +470,7 @@ button{
     }
     100%{
         transform: translateY(0%);
-        opacity: 1;
+        /* opacity: 1; */
     }
 }
 .section__img{

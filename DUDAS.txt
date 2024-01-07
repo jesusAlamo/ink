@@ -16,6 +16,7 @@ DUDAS:
 - @media: se puede meter un @media dentro de otro @media??
 - cómo meto un div dentro de un button?? --> solucionado, pero no me deja clickar sin hover para modo touch (tendré que cambiar el modo touch
 - está bien empleado en @media para modo touch o es chapuza/guarrería?
+- about: si pongo li como relative, con absolute en los .header__img se me descuadra todo y no averiguo el porque, si .header__img no tiene position absolute va algo mejor
 
 
 
