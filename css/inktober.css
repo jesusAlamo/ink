@@ -252,21 +252,31 @@ button{
     top: 0;
     left: calc( 50% - 1000px / 2 );
 }
-.header__h1{
+.header__a{
     /* background-color: yellow; */
-    width: 700px;
+    /* width: 740px; */
+    /* width: 100%; */
     height: 100%;
     margin: auto auto 0 auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.header__h1{
+    /* background-color: orange; */
 
     color: white;
     font-size: 6rem;
     font-family: 'Caveat', cursive;
     text-transform: uppercase;
 
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+    transition: 0.2s all 0s ease;
+}
+.header__a:hover .header__h1{
+    font-size: 6.5rem;
+    letter-spacing: 8px;
 }
 .header__separator{
     background-color: white;
@@ -469,6 +479,8 @@ button{
     /* border: 0.25rem dotted red; */
     border: none;
     padding: 0;
+
+    cursor: none;
 }
 .main__span{
     background-color: white;
@@ -489,6 +501,8 @@ button{
 .empty{
     background-color: rgba(0, 255, 0, 0);
     border: none;
+
+    cursor: none;
 }
 
 /*-------------------------------------------------*/
