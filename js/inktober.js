@@ -8,7 +8,7 @@ console.log( cursor )
 
     window.addEventListener( 'mousemove' , function( e ){
 
-        console.clear()
+        // console.clear()
 
         // console.log( 'e.clientX' )
         // console.log( e.clientX )
@@ -28,24 +28,33 @@ console.log( cursor )
 
     })
 
+
+    
 // Cuando hago CLICK en .main__number, 
 //.main__lightbox LE ADD active
 
-const mainNumber        = document.querySelector('.main__number')
-const mainLightbox      = document.querySelector('.main__lightbox')
-const lightboxBtn       = document.querySelector('.lightbox__btn')
+// Cuando hago CLICK en .lightbox__btn, 
+//.main__lightbox LE REMOVE active
+
+const mainNumber        = document.querySelectorAll('.main__number')
+const mainLightbox      = document.querySelectorAll('.main__lightbox')
+const lightboxBtn       = document.querySelectorAll('.lightbox__btn')
 
 console.log( mainNumber )
 console.log( mainLightbox )
 console.log( lightboxBtn )
 
-mainNumber.addEventListener('click' , function(){
-    mainLightbox.classList.add('active')
-})
+mainNumber.forEach(function(eachNumber,i){
 
-// Cuando hago CLICK en .lightbox__btn, 
-//.main__lightbox LE REMOVE active
+    mainNumber[i].addEventListener('click',function(){
 
-lightboxBtn.addEventListener('click' , function(){
-    mainLightbox.classList.remove('active')
+        mainLightbox[i].classList.add('active')
+
+        lightboxBtn[i].addEventListener('click',function(){
+
+            mainLightbox[i].classList.remove('active')
+    
+        })
+
+    })
 })
