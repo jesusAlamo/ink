@@ -278,7 +278,7 @@ button{
     font-size: 6.5rem;
     letter-spacing: 8px;
 }
-.header__separator{
+.header__separator{                     /* <-- Debería ser un :after */
     background-color: white;
     width: 100%;
     min-height: 2px;
@@ -301,7 +301,7 @@ button{
 .main__grid{
     /* background-color: white; */
     width: 1000px;
-    height: 580px;
+    height: 560px;
     /* padding: 0.5rem; */
 
     display: grid;
@@ -309,7 +309,7 @@ button{
     /* grid-gap: 0.5rem; */
 
     position: fixed;
-    top: calc( 50% - 580px / 2 );
+    top: calc( 50% - 560px / 2 );
     left: calc( 50% - 1000px / 2 );
 
     cursor: crosshair;

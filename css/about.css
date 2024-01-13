@@ -368,7 +368,7 @@ button{
 
     animation: show 1.2s 0s ease 1 backwards;
 }
-.header__separator{
+.header__separator{                     /* <-- Debería ser un :after */
     background-color: white;
     width: 100%;
     min-height: 2px;
