@@ -254,7 +254,7 @@ button{
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1.25rem;
+    gap: 1.25rem;
 }
 .main__cell{
     /* background-color: lime; */
