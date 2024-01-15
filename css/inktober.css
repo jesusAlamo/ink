@@ -84,8 +84,8 @@ button{
 .corner{
     /* background-color: orange; */
     /* border: 2px dotted red; */
-    width: 15.625rem;
-    height: 15.625rem;
+    width: 12.5rem;
+    height: 12.5rem;
 
     position: fixed;
 }
@@ -115,8 +115,8 @@ button{
 }
 .corner__area{
     background-color: white;
-    width: 15.625rem;
-    height: 15.625rem;
+    width: 12.5rem;
+    height: 12.5rem;
 
     position: absolute;
     top: 0;

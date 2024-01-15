@@ -83,8 +83,8 @@ button{
 .corner{
     /* background-color: orange; */
     /* border: 2px dotted red; */
-    width: 15.625rem;
-    height: 15.625rem;
+    width: 12.5rem;
+    height: 12.5rem;
 
     position: fixed;
 }
@@ -114,8 +114,8 @@ button{
 }
 .corner__area{
     background-color: white;
-    width: 15.625rem;
-    height: 15.625rem;
+    width: 12.5rem;
+    height: 12.5rem;
 
     position: absolute;
     top: 0;
@@ -647,12 +647,12 @@ button{
         height: 4.6875rem;
     }
 }
-@media(max-width: 1300px) or (max-height: 750px){
+/* @media(max-width: 1300px) or (max-height: 750px){
     .corner, .corner__area{
         width: 12.5rem;
         height: 12.5rem;
     }
-}
+} */
 @media(max-width: 1200px) or (max-height: 750px){
     .main__area{
         width: 18.75rem;
