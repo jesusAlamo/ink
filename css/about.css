@@ -375,7 +375,8 @@ button{
     /* width: 80%; */
     width: 1000px;
     /* min-height: 11.875rem; */
-    min-height: 20vh;
+    /* min-height: 20vh; */
+    min-height: 200px;
     padding: .625rem;
 
     display: flex;
@@ -397,7 +398,7 @@ button{
 .header__ul{
     /* background-color: lime; */
     width: 700px;
-    min-height: 100px;
+    min-height: 120px;
     margin: 0 auto ;
     padding: .625rem;
 
@@ -408,32 +409,42 @@ button{
     gap: 4rem;
 }
 .header__li{
-    /* background-color: yellow; */
-    background-color: black;
+    /* background-color: pink; */
+    /* background-color: black; */
     /* width: 100px;
     height: 100px; */
-    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    /* border-radius: 50%; */
 
     position: relative;
 
-    display: flex;
+    /* display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
-.header__circle{
-    background-color: white;
-    width: 100px;
-    height: 100px;
-    border: 2px solid white;
+/* .header__area{
+    background-color: purple;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.397);
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
     border-radius: 50%;
+ 
+    border: 2px dashed white;
+
     position: absolute;
+    top: 0;
+    top: calc( 50% - 120px / 2 );
+    left: calc( 50% - 120px / 2 );
 
     opacity: 0;
 
-    transition: 0.1s all 0s ease;
-}
-.header__li:hover .header__circle{
+    animation: circles 150s linear infinite both;
+} */
+/* .header__li:hover .header__circle{
     background-color: rgba(255, 255, 255, 0);
     width: 100px;
     height: 100px;
@@ -441,15 +452,16 @@ button{
     border: 4px solid white;
 
     opacity: 1;
-}
+} */
 .header__btn{
-    background-color: black;
-    background-color: rgba(0, 0, 0, 0);
+    /* background-color: rgba(201, 14, 14, 0.76); */
+    /* background-color: rgba(0, 0, 0, 0); */
     /* background-color: yellow; */
     width: 100px;
     height: 100px;
-    padding: .625rem;
-    border-radius: 50%;
+    /* padding: .9375rem; */
+    /* border-radius: 50%; */
+    border-radius: 20px;
 
     /* background-image: url(../assets/icon-profile-white.png);
     background-repeat: no-repeat;
@@ -457,16 +469,23 @@ button{
     background-size: contain; */
 
     position: absolute;
-    top: 0;
+    /* top: 0; */
+    top: calc( 50% - 100px / 2 );
+    left: calc( 50% - 100px / 2 );
 
     /* opacity: 1; */
 
     /* transition: .2s all 0s ease; */
 }
 .header__btn:hover{
-    border: 2px dashed white;
-    animation: circles 150s linear infinite both;
+    border: 3px dashed white;
+    /* animation: circles 150s linear infinite both; */
+    animation: in__out 1.8s linear infinite both;
 }
+/* .header__btn:hover .header__area{
+    background-color: red;
+    opacity: 1;
+} */
 @keyframes circles{
     0%{
         transform: rotate(0deg);
@@ -475,27 +494,44 @@ button{
         transform: rotate(3600deg);
     }
 }
+@keyframes in__out{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.15);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 .header__btn.active{
     background-color: rgba(255, 255, 255, 0);
     /* background-color: red; */
     width: 100px;
     height: 100px;
 
-    border: 2px solid white;
+    /* border: 2px solid white; */
 
     font-weight: bold;
     border: 4px solid white;
 
     animation: half__show 0.5s 0s ease 1 backwards;
+    /* animation: half__show 1.2s 0s ease 1 backwards; */
 }
 .header__img{
+    /* background-color: rgba(121, 130, 0, 0.644); */
     /* width: 100%;
     height: 100%; */
-    width: 100px;
-    height: 100px;
+    /* width: 100px;
+    height: 100px; */
+    width: 80%;
+    height: 80%;
 
-    /* position: absolute; */
-    /* top: 0; */
+    position: absolute;
+    top: 0;
+    top: calc( 50% - 80% / 2 );
+    left: calc( 50% - 80% / 2 );
 
     /* cursor: crosshair; */
 
@@ -548,7 +584,8 @@ button{
     /* width: 100%; */
     width: 1000px;
     /* height: 80vh; */
-    min-height:550px;
+    /* min-height: 550px; */
+    min-height: calc( 100% - 200px - 200px );
     /* padding: 4.5rem .625rem; */
     padding: 1rem;
     /* margin: auto; */
@@ -664,7 +701,7 @@ button{
     line-height: 1.3rem;
     text-align: left;
 }
-.section__separator{
+.section__separator{                     /* <-- Debería ser un :after */
     background-color: white;
     width: 220px;
     min-height: 2px;

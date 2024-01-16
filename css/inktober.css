@@ -373,7 +373,8 @@ button{
 .header{
     /* background-color: burlywood; */
     width: 1000px;
-    min-height: 20vh;
+    /* min-height: 20vh; */
+    min-height: 200px;
     /* padding: .625rem; */
 
     display: flex;
