@@ -450,7 +450,7 @@ button{
     background-color: rgba(0, 0, 0, 0);
     background-color: white;
     /* padding: .5rem; */
-    border: 0.1rem solid white;
+    /* border: 0.1rem solid white; */
 
     display: flex;
     flex-flow: row nowrap;

@@ -64,11 +64,17 @@ console.log( cursorTail )
 const colorBtn        = document.querySelectorAll('.color__btn')
 const colorNone        = document.querySelector('.color__none')
 const cursorInner      = document.querySelector('.cursor__inner')
+const mainCell      = document.querySelectorAll('.main__cell')
+const day      = document.querySelectorAll('.day')
+const empty      = document.querySelectorAll('.empty')
 
 console.log( colorBtn)
 console.log( colorNone)
 console.log( cursorTail )
 console.log( cursorInner )
+console.log( mainCell )
+console.log( day )
+console.log( empty )
     
     colorBtn.forEach(function(eachBtn,i){
     
@@ -88,6 +94,11 @@ console.log( cursorInner )
                 colorBtn[0].style.backgroundColor="red"
                 colorBtn[1].style.backgroundColor=""
                 colorBtn[2].style.backgroundColor=""
+                mainCell.forEach(function(eachCell,k){
+                    if(k > 12 && k < 44){
+                    mainCell[k].style.backgroundColor="red"
+                    }
+                })
             }
             else if(i === 1){
                 cursorTail.forEach(function(eachTail,j){
@@ -103,6 +114,11 @@ console.log( cursorInner )
                 colorBtn[0].style.backgroundColor=""
                 colorBtn[1].style.backgroundColor="lime"
                 colorBtn[2].style.backgroundColor=""
+                mainCell.forEach(function(eachCell,k){
+                    if(k > 12 && k < 44){
+                    mainCell[k].style.backgroundColor="lime"
+                    }
+                })
             }
             else{
                 cursorTail.forEach(function(eachTail,j){
@@ -119,6 +135,11 @@ console.log( cursorInner )
                 colorBtn[0].style.backgroundColor=""
                 colorBtn[1].style.backgroundColor=""
                 colorBtn[2].style.backgroundColor="blue"
+                mainCell.forEach(function(eachCell,k){
+                    if(k > 12 && k < 44){
+                    mainCell[k].style.backgroundColor="blue"
+                    }
+                })
             }
     
         })
@@ -133,7 +154,11 @@ console.log( cursorInner )
         colorBtn[0].style.backgroundColor=""
         colorBtn[1].style.backgroundColor=""
         colorBtn[2].style.backgroundColor=""
-    
+        mainCell.forEach(function(eachCell,k){
+            if(k > 12 && k < 44){
+            mainCell[k].style.backgroundColor="white"
+            }
+        })
     })
     
 // Cuando hago CLICK en .main__number, 
