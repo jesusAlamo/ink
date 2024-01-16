@@ -410,12 +410,13 @@ button{
 }
 .header__li{
     /* background-color: pink; */
-    /* background-color: black; */
+    background-color: black;
     /* width: 100px;
     height: 100px; */
     width: 100px;
     height: 100px;
     /* border-radius: 50%; */
+    border-radius: 21px;
 
     position: relative;
 
@@ -496,13 +497,13 @@ button{
 }
 @keyframes in__out{
     0%{
-        transform: scale(1);
+        transform: scale(0.8);
     }
     50%{
-        transform: scale(1.15);
+        transform: scale(1);
     }
     100%{
-        transform: scale(1);
+        transform: scale(0.8);
     }
 }
 .header__btn.active{
