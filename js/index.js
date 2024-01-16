@@ -1,6 +1,6 @@
 'use strict'
 
-console.clear()
+// console.clear()
 
 const cursor = document.querySelector('.cursor')
 
@@ -8,7 +8,7 @@ console.log( cursor )
 
     window.addEventListener( 'mousemove' , function( e ){
 
-        console.clear()
+        // console.clear()
 
         // console.log( 'e.clientX' )
         // console.log( e.clientX )
@@ -34,7 +34,7 @@ console.log( cursorTail )
 
     window.addEventListener( 'mousemove' , function( e ){
 
-        console.clear()
+        // console.clear()
 
         // console.log( 'e.clientX' )
         // console.log( e.clientX )
@@ -134,4 +134,29 @@ console.log( cursorInner )
         colorBtn[1].style.backgroundColor=""
         colorBtn[2].style.backgroundColor=""
 
+    })
+
+const eyeHide = document.querySelector('.eye__hide')
+const mainDot = document.querySelectorAll('.main__dot')
+const mainA = document.querySelectorAll('.main__a')
+const cornerImg = document.querySelectorAll('.corner__img')
+
+console.log(eyeHide)
+console.log(mainDot)
+console.log(mainA)
+console.log(cornerImg)
+
+    eyeHide.addEventListener('click',function(){
+        mainDot.forEach(function(eachDot,i){
+            mainDot[i].classList.toggle('dot__seen')
+            mainA[i].classList.toggle('a__seen')
+        })
+        if(mainDot[0].classList.contains("dot__seen")){
+            cornerImg[0].src="./assets/icon-opened-eye-white.png"
+            cornerImg[1].src="./assets/icon-opened-eye-black.png"
+        }
+        else{
+            cornerImg[0].src="./assets/icon-closed-eye-white.png"
+            cornerImg[1].src="./assets/icon-closed-eye-black.png"
+        }
     })

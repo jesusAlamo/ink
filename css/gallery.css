@@ -77,35 +77,36 @@ button{
     /* background-color: gray; */
     filter: blur(1rem);
     box-shadow: 0 0 100px 20px gray;
-    transition: 1.5s all 0s ease;
+    transition: 1.5s all 0s linear;
+    /* transition: 1.5s all 0s ease; */
 }
 .follow__fourth{
     /* background-color: gray; */
     filter: blur(1rem);
     box-shadow: 0 0 100px 40px gray;
     transition: 1s all 0s linear;
-    transition: 1s all 0s ease;
+    /* transition: 1s all 0s ease; */
 }
 .follow__third{
     /* background-color: gray; */
     filter: blur(1rem);
     box-shadow: 0 0 100px 60px gray;
     transition: .6s all 0s linear;
-    transition: .6s all 0s ease;
+    /* transition: .6s all 0s ease; */
 }
 .follow__second{
     /* background-color: gray; */
     filter: blur(1rem);
     box-shadow: 0 0 100px 80px gray;
     transition: .3s all 0s linear;
-    transition: .3s all 0s ease;
+    /* transition: .3s all 0s ease; */
 }
 .follow__first{
     /* background-color: gray; */
     filter: blur(1rem);
     box-shadow: 0 0 100px 100px gray;
     transition: .1s all 0s linear;
-    transition: .1s all 0s ease;
+    /* transition: .1s all 0s ease; */
 }
 .cursor{
     background-color: white;
