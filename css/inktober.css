@@ -55,6 +55,59 @@ button{
 
 /*=================================================*/
 
+.cursor__tail{
+    background-color: gray;
+    width: 3.75rem;
+    min-height: 3.75rem;
+    border-radius: 50%;
+    display: block;
+
+    position: absolute;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+}
+.cursor__tail.active{
+    opacity: 1;
+}
+.follow__fifth{
+    /* background-color: gray; */
+    filter: blur(1rem);
+    box-shadow: 0 0 100px 20px gray;
+    transition: 1.5s all 0s ease;
+}
+.follow__fourth{
+    /* background-color: gray; */
+    filter: blur(1rem);
+    box-shadow: 0 0 100px 40px gray;
+    transition: 1s all 0s linear;
+    transition: 1s all 0s ease;
+}
+.follow__third{
+    /* background-color: gray; */
+    filter: blur(1rem);
+    box-shadow: 0 0 100px 60px gray;
+    transition: .6s all 0s linear;
+    transition: .6s all 0s ease;
+}
+.follow__second{
+    /* background-color: gray; */
+    filter: blur(1rem);
+    box-shadow: 0 0 100px 80px gray;
+    transition: .3s all 0s linear;
+    transition: .3s all 0s ease;
+}
+.follow__first{
+    /* background-color: gray; */
+    filter: blur(1rem);
+    box-shadow: 0 0 100px 100px gray;
+    transition: .1s all 0s linear;
+    transition: .1s all 0s ease;
+}
 .cursor{
     background-color: white;
     width: 3.75rem;
@@ -143,10 +196,89 @@ button{
     top: 0;
     right: 0;
 
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
     transform: translateX(100%) translateY(-100%);
 }
 .corner:hover .drop__hide{
     transform: translateX(0%) translateY(0%);
+}
+.color__option{
+    /* background-color: burlywood; */
+    width: 85%;
+    height: 85%;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.color__btn{
+    /* background-color: brown; */
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 25px;
+    border: .125rem solid black;
+    border-radius: 20px;
+
+    position: absolute;
+
+    transition: .2s all 0s ease;
+}
+.color__btn:hover{
+    transform: scale(0.85);
+}
+.color__btn:active{
+    transform: scale(1.1);
+}
+.color__red{
+    /* background-color: red; */
+    top: 20px;
+    left: 20px;
+}
+.color__red:hover{
+    background-color: red;
+}
+.color__green{
+    /* background-color: lime; */
+    bottom: 20px;
+    left: 20px;
+}
+.color__green:hover{
+    background-color: lime;
+}
+.color__blue{
+    /* background-color: blue; */
+    bottom: 20px;
+    right: 20px;
+}
+.color__blue:hover{
+    background-color: blue;
+}
+.color__none{
+    /* background-color: grey; */
+    top: 20px;
+    right: 20px;
+    border: none;
+}
+.color__svg{
+    /* background-color: aqua; */
+    width: 80%;
+    height: 80%;
+    /* margin: auto; */
+    /* padding: 25px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: calc( 50% - 80% / 2 );
+    left: calc( 50% - 80% / 2 );
+
+    transition: .2s all 0s ease;
+}
+.color__none:hover .color__svg{
+    transform: scale(2);
 }
 .linkedin__hide{
     border-top-right-radius: 60%;
@@ -459,8 +591,8 @@ button{
     height: 65px;
     /* width: 25%; */
     padding: 1rem;
-    border-radius: 50%;
-    border-radius: 20px;;
+    /* border-radius: 50%; */
+    border-radius: 20px;
 
     transition: all .2s ease;
 }
