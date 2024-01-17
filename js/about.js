@@ -154,12 +154,12 @@ headerBtn.forEach(function(eachBtn,i){
 
         mainSection.forEach(function(eachSection, i){
 
-            mainSection[i].classList.remove('active')
+            // mainSection[i].classList.remove('active')
             headerBtn[i].classList.remove('active')
 
         })
 
-        mainSection[i].classList.add('active')
+        // mainSection[i].classList.add('active')
         headerBtn[i].classList.add('active')
 
     })

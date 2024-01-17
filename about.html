@@ -108,39 +108,48 @@
             <ul class="header__ul">
 
                 <li class="header__li">
-                    <!-- <div class="header__area"></div> -->
-                    <img src="./assets/icon-profile-white.png" alt="profile image" loading="lazy" class="header__img">
-                    <button class="header__btn active">
-                        <!-- 0 -->
-                        <!-- <img src="./assets/icon-profile-white.png" alt="profile image" title="profile image" loading="lazy" class="header__img"> -->
-                    </button>
+                    <a href="#author" title="header__a" class="header__a">
+                        <!-- <div class="header__area"></div> -->
+                        <img src="./assets/icon-profile-white.png" alt="profile image" loading="lazy" class="header__img">
+                        <button class="header__btn active">
+                            <!-- 0 -->
+                            <!-- <img src="./assets/icon-profile-white.png" alt="profile image" title="profile image" loading="lazy" class="header__img"> -->
+                        </button>
+                    </a>
                 </li>
 
                 <li class="header__li">
-                    <!-- <div class="header__circle"></div> -->
-                    <img src="./assets/icon-job-white.png" alt="profile image" title="profile image" loading="lazy" class="header__img">
-                    <button class="header__btn">
-                        <!-- 1 -->
-                        <!-- <img src="./assets/icon-job-white.png" alt="profile image" title="profile image" loading="lazy" class="header__img"> -->
-                    </button>
+                    <a href="#work_experience" title="header__a" class="header__a">
+                        <!-- <div class="header__circle"></div> -->
+                        <img src="./assets/icon-job-white.png" alt="profile image" title="profile image" loading="lazy" class="header__img">
+                        <button class="header__btn">
+                            <!-- 1 -->
+                            <!-- <img src="./assets/icon-job-white.png" alt="profile image" title="profile image" loading="lazy" class="header__img"> -->
+                        </button>
+                    </a>
+                        
                 </li>
 
                 <li class="header__li">
-                    <!-- <div class="header__circle"></div> -->
-                    <img src="./assets/icon-academic-white.png" alt="profile image" title="profile image" loading="lazy" class="header__img">
-                    <button class="header__btn">
-                        <!-- 2 -->
-                        <!-- <img src="./assets/icon-academic-white.png" alt="profile image" title="profile image" loading="lazy" class="header__img"> -->
-                    </button>
+                    <a href="#academic_experience" title="header__a" class="header__a">
+                        <!-- <div class="header__circle"></div> -->
+                        <img src="./assets/icon-academic-white.png" alt="profile image" title="profile image" loading="lazy" class="header__img">
+                        <button class="header__btn">
+                            <!-- 2 -->
+                            <!-- <img src="./assets/icon-academic-white.png" alt="profile image" title="profile image" loading="lazy" class="header__img"> -->
+                        </button>
+                    </a>
                 </li>
 
                 <li class="header__li">
-                    <!-- <div class="header__circle"></div> -->
-                    <img src="./assets/icon-contact-white.png" alt="profile image" title="profile image" loading="lazy" class="header__img">
-                    <button class="header__btn">
-                        <!-- 3 -->
-                        <!-- <img src="./assets/icon-contact-white.png" alt="profile image" title="profile image" loading="lazy" class="header__img"> -->
-                    </button>
+                    <a href="#contact" title="header__a" class="header__a">
+                        <!-- <div class="header__circle"></div> -->
+                        <img src="./assets/icon-contact-white.png" alt="profile image" title="profile image" loading="lazy" class="header__img">
+                        <button class="header__btn">
+                            <!-- 3 -->
+                            <!-- <img src="./assets/icon-contact-white.png" alt="profile image" title="profile image" loading="lazy" class="header__img"> -->
+                        </button>
+                    </a>
                 </li>
 
             </ul>
@@ -156,7 +165,7 @@
 
     <main class="main">
         <div class="main__hero">
-            <section class="main__section active">
+            <section class="main__section" id="author">
                 <div class="section__img">
                     <img src="./assets/self-portrait-px.png" alt="developer photo" title="developer photo" loading="lazy" class="developer__img">
                 </div>
@@ -173,7 +182,7 @@
                 </div>
             </section>
 
-            <section class="main__section">
+            <section class="main__section" id="work_experience">
                 <div class="section__img">
                     <img src="./assets/icon-job-white.png" alt="developer photo" title="developer photo" loading="lazy" class="developer__img">
                 </div>
@@ -190,7 +199,7 @@
                 </div>
             </section>
 
-            <section class="main__section">
+            <section class="main__section" id="academic_experience">
                 <div class="section__img">
                     <img src="./assets/icon-academic-white.png" alt="developer photo" title="developer photo" loading="lazy" class="developer__img">
                 </div>
@@ -207,10 +216,10 @@
                 </div>
             </section>
 
-            <section class="main__section">
-                <div class="section__img">
+            <section class="main__section" id="contact">
+                <!-- <div class="section__img">
                     <img src="./assets/icon-contact-white.png" alt="developer photo" title="developer photo" loading="lazy" class="developer__img">
-                </div>
+                </div> -->
                 <div class="section__wrap">
                     <h2 class="section__h2">
                         Contacto
@@ -218,9 +227,34 @@
                     <div class="section__separator">
 
                     </div>
-                    <p class="section__p">
+                    <!-- <p class="section__p">
                         Llámame.
-                    </p>
+                    </p> -->
+                    <form class="section__form" action="#contact" method="post" enctype="text/plain">
+                        <label for="name">
+                            Introduzca su nombre
+                        </label>
+                            <input class="form__input" id="name" type="text" name="user__name" placeholder="Nombre completo (no se recopilarán sus datos)">
+                        <label for="name">
+                            Introduzca su email
+                        </label>
+                            <input class="form__input" type="email" name="user__mail" placeholder="Email (no se recopilarán sus datos)">
+                        <label for="name">
+                            Indique el motivo de contacto
+                        </label>
+                            <textarea class="form__textarea" name="user__message" placeholder="Cuerpo del mensaje (no se recopilará el texto)" rows="3">
+
+                            </textarea>
+                        <button class="form__btn" type="form__btn" value="Enviado">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+                <div class="section__arrow arrow__left">
+                    <img src="./assets/arrow-right-focus.png" alt="developer photo" title="developer photo" loading="lazy" class="arrow__img">
+                </div>
+                <div class="section__arrow arrow__right">
+                    <img src="./assets/arrow-left-focus.png" alt="developer photo" title="developer photo" loading="lazy" class="arrow__img">
                 </div>
             </section>
         </div>
