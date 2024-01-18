@@ -852,7 +852,7 @@ button{
         line-height: 4.75rem;
     }
 }
-@media(max-width: 750px)  or (max-height: 525px){
+@media(max-width: 750px) or (max-height: 525px){
     .main__area{
         width: 10.9375rem;
         height: 3.75rem;
