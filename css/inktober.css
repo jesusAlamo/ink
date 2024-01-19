@@ -1008,8 +1008,8 @@ button{
     }
     .main__grid{
         /* width: 300%; */
-        height: 150px;
-        top: calc( 50% - 150px / 2 );
+        height: 125px;
+        top: calc( 50% - 125px / 2 );
         grid-template-columns: repeat( 31, 1fr );
 
         /* position: initial;
