@@ -852,7 +852,7 @@ button{
     .header{
         background-color: black;
         width: 100%;
-        min-height: 100px;
+        min-height: 50px;
         left: calc( 50% - 100% / 2 );
     }
     .header__h1{
@@ -996,7 +996,7 @@ button{
     .header{
         background-color: black;
         width: 100%;
-        min-height: 100px;
+        min-height: 50px;
         left: calc( 50% - 100% / 2 );
     }
     .header__h1{
