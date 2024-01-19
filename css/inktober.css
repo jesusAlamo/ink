@@ -920,12 +920,12 @@ button{
         background-color: black;
         border: 2px solid white;
 
-        width: 120px;
-        min-height: 120px;
+        width: 75px;
+        min-height: 75px;
 
         position: fixed;
         bottom: -1%;
-        left: calc( 50% - 120px / 2 );
+        left: calc( 50% - 75px / 2 );
 
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
@@ -998,6 +998,8 @@ button{
         width: 100%;
         min-height: 50px;
         left: calc( 50% - 100% / 2 );
+
+        z-index: -1;
     }
     .header__h1{
         font-size: 2.9rem;
@@ -1041,7 +1043,7 @@ button{
         display: none;
     }
     .lightbox__img{
-        max-width: 300px;
+        max-width: 240px;
     }
     .lightbox__ul{
         max-width: 300px;
@@ -1068,12 +1070,14 @@ button{
         background-color: black;
         border: 2px solid white;
 
-        width: 120px;
-        min-height: 120px;
+        width: 75px;
+        min-height: 75px;
 
         position: fixed;
         bottom: -1%;
-        left: calc( 50% - 120px / 2 );
+        left: calc( 50% - 75px / 2 );
+
+        z-index: -1;
 
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
