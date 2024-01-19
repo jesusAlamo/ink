@@ -773,6 +773,10 @@ button{
         width: 25rem;
         height: 4.6875rem;
     }
+    .dot__seen{
+        width: 25rem;
+        height: 4.6875rem;
+    }
 }
 @media(max-width: 1400px){
     .main__area{
@@ -784,6 +788,10 @@ button{
         height: 18.75rem;
     }
     .main__area:hover .main__dot{
+        width: 21.875rem;
+        height: 4.6875rem;
+    }
+    .dot__seen{
         width: 21.875rem;
         height: 4.6875rem;
     }
@@ -807,6 +815,10 @@ button{
         width: 18.75rem;
         height: 4.6875rem;
     }
+    .dot__seen{
+        width: 18.75rem;
+        height: 4.6875rem;
+    }
     .main__h2{
         font-size: 3.125rem;
         line-height: 4.75rem;
@@ -822,6 +834,10 @@ button{
         height: 15.625rem;
     }
     .main__area:hover .main__dot{
+        width: 15.625rem;
+        height: 4.6875rem;
+    }
+    .dot__seen{
         width: 15.625rem;
         height: 4.6875rem;
     }
@@ -847,6 +863,10 @@ button{
         width: 12.5rem;
         height: 4.6875rem;
     }
+    .dot__seen{
+        width: 12.5rem;
+        height: 4.6875rem;
+    }
     .main__h2{
         font-size: 2.1875rem;
         line-height: 4.75rem;
@@ -862,6 +882,10 @@ button{
         height: 12.5rem;
     }
     .main__area:hover .main__dot{
+        width: 10.9375rem;
+        height: 3.75rem;
+    }
+    .dot__seen{
         width: 10.9375rem;
         height: 3.75rem;
     }
@@ -956,12 +980,11 @@ button{
 
 /* Detección de dispositivo touchscreen */
 
-@media only screen and (hover: none) and (pointer: coarse){
+/* @media only screen and (hover: none) and (pointer: coarse){
     a{
         cursor: none;
     }
     body{
-        /* overflow: auto; */
         cursor: none;
     }
     button{
@@ -970,9 +993,6 @@ button{
     .cursor{
         display: none;
     }
-    /* .corner{
-        display: none;
-    } */
     .corner__area{
         display: none;
     }
@@ -999,7 +1019,7 @@ button{
     .main__a{
         opacity: 1;
     }
-}
+} */
 
 /* @media only screen and (hover: none) and (pointer: coarse) and (max-width: 1500px){
     .main__area{
