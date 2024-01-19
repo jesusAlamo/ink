@@ -1033,8 +1033,8 @@ button{
         border-bottom-right-radius: 60px;
     }
     .main__number:hover{
-        border-top-left-radius: 60px;
-        border-bottom-right-radius: 120px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 60px;
     }
     .day{
         display: none;
