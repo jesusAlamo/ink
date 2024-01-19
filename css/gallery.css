@@ -1198,7 +1198,7 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
 }
 @media(max-height: 680px){
     body{
-        overflow: auto;
+        /* overflow: auto; */
         cursor: crosshair;
     }
     .cursor{
