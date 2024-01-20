@@ -9,7 +9,7 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 Header set Cache-Control "public, max-age=2592000"
 </FilesMatch>
  
-//Restricted files
+#Restricted files
 <FilesMatch "\.(htaccess)$">
   Order Deny,Allow
   Deny from all
