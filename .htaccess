@@ -1,0 +1,16 @@
+
+#Rewrite everything to https
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+//Caching schema
+<FilesMatch "\.(jpg|css|webp|webm|js|webm)$">
+Header set Cache-Control "public, max-age=2592000"
+</FilesMatch>
+ 
+//Restricted files
+<FilesMatch "\.(htaccess)$">
+  Order Deny,Allow
+  Deny from all
+</FilesMatch>
