@@ -759,7 +759,6 @@ label{
 .section__wrap{
     /* background-color: brown; */
     width: 50%;
-    max-height: ;
     padding: .625rem;
 
     display: flex;
@@ -859,7 +858,7 @@ label{
     /* background-color: black; */
     /* width: 50px;
     height: 50px; */
-    margin: 10px auto;
+    /* margin: 0 auto; */
     padding: 25px;
 
     border: 2px solid white;
@@ -1202,6 +1201,7 @@ label{
         display: none;
     }
     .header{
+        background-color: black;
         width: 100%;
         min-height: 50px;
         left: calc( 50% - 100% / 2 );
@@ -1316,7 +1316,6 @@ label{
         resize: none;
     }
     .form__btn{
-        margin: 10px auto;
         padding: 25px;
 
         font-size: 2rem;
@@ -1411,9 +1410,9 @@ label{
        display: none; 
     }
 } */
-@media(max-height: 680px){
+@media(max-height: 690px){
     body{
-        /* overflow: auto; */
+        overflow: auto;
         cursor: crosshair;
     }
     .cursor{
@@ -1423,6 +1422,7 @@ label{
         display: none;
     }
     .header{
+        background-color: black;
         width: 100%;
         min-height: 50px;
         left: calc( 50% - 100% / 2 );
@@ -1495,6 +1495,6 @@ label{
 }
 @media(max-height: 560px){
     body{
-        overflow: initial;
+        overflow: auto;
     }
 }
