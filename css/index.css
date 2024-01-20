@@ -897,6 +897,7 @@ button{
 @media(max-width: 675px){
     body{
         overflow: auto;
+        cursor: crosshair;
     }
     .cursor{
         display: none;
