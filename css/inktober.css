@@ -1093,6 +1093,12 @@ button{
         font-size: 2.9rem;
         letter-spacing: 0px;
     }
+    .main__lightbox{
+        top: -100%;
+    }
+    .main__lightbox.active{
+        top: 0;
+    }
     .lightbox__img{
         max-width: 240px;
     }
@@ -1128,7 +1134,7 @@ button{
         bottom: -1%;
         left: calc( 50% - 75px / 2 );
 
-        /* z-index: -1; */
+        z-index: -1;
 
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
