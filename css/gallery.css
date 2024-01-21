@@ -1,4 +1,15 @@
-/* Normalizar / Reset */
+/*-----------------------------------------------*\
+gallery.css
+- Normalizar / Reset
+- Elementos extra
+- Header
+- Main
+- Footer
+- @Keyframes
+- @Media
+*------------------------------------------------*/
+
+/*================ Normalizar / Reset =================*/
 *{
     margin:0;
     padding: 0;
@@ -13,6 +24,7 @@ html{
     font-size: 100%;
 }
 h1 , h2 , h3 , h4 , h5 , h6 , p , strong{
+    font-family: 'Caveat', cursive;
     font-weight: inherit;
     font-size: inherit;
     font-style: normal;
@@ -34,13 +46,9 @@ a{
     cursor: crosshair;
 }
 body{
-    /* font-family: 'Montserrat', sans-serif; */
-    /* text-transform: uppercase; */
-    /* font-weight: 400; */
-    /* letter-spacing: 2px; */
-    color:white;
+    font-family: 'Caveat', cursive;
+    color: white;
     background-color: rgb(0, 0, 0);
-    /* background-color: #0f0f0f; */
 
     cursor: none;
 
@@ -49,11 +57,12 @@ body{
 }
 button{
     background-color: rgba(0, 0, 0, 0);
+    font-family: 'Caveat', cursive;
     cursor: crosshair;
 }
 
-/*=================================================*/
-
+/*================ Elementos extra =================*/
+/* Cursor y cola */
 .cursor__tail{
     background-color: gray;
     width: 3.75rem;
@@ -74,39 +83,29 @@ button{
     opacity: 1;
 }
 .follow__fifth{
-    /* background-color: gray; */
     filter: blur(1rem);
     box-shadow: 0 0 100px 20px gray;
     transition: 1.5s all 0s linear;
-    /* transition: 1.5s all 0s ease; */
 }
 .follow__fourth{
-    /* background-color: gray; */
     filter: blur(1rem);
     box-shadow: 0 0 100px 40px gray;
     transition: 1s all 0s linear;
-    /* transition: 1s all 0s ease; */
 }
 .follow__third{
-    /* background-color: gray; */
     filter: blur(1rem);
     box-shadow: 0 0 100px 60px gray;
     transition: .6s all 0s linear;
-    /* transition: .6s all 0s ease; */
 }
 .follow__second{
-    /* background-color: gray; */
     filter: blur(1rem);
     box-shadow: 0 0 100px 80px gray;
     transition: .3s all 0s linear;
-    /* transition: .3s all 0s ease; */
 }
 .follow__first{
-    /* background-color: gray; */
     filter: blur(1rem);
     box-shadow: 0 0 100px 100px gray;
     transition: .1s all 0s linear;
-    /* transition: .1s all 0s ease; */
 }
 .cursor{
     background-color: white;
@@ -125,18 +124,14 @@ button{
 }
 .cursor__inner{
     background-color: white;
-    /* background-color: lightcoral; */
-    /* background-color: lightgreen; */
-    /* background-color: lightskyblue; */
     width: 1.25rem;
     height: 1.25rem;
     border: .0625rem solid black;
     border-radius: 50%;
 }
 
+/* Esquinas*/
 .corner{
-    /* background-color: orange; */
-    /* border: 2px dotted red; */
     width: 12.5rem;
     height: 12.5rem;
 
@@ -177,7 +172,8 @@ button{
 
     cursor: crosshair;
 
-    transition: .2s all 0s ease;    /* el efecto no sale como se espera */
+    /* FIX: el efecto no sale como se espera */
+    transition: .2s all 0s ease;
 }
 .home__hide{
     border-bottom-right-radius: 60%;
@@ -207,7 +203,6 @@ button{
     transform: translateX(0%) translateY(0%);
 }
 .color__option{
-    /* background-color: burlywood; */
     width: 85%;
     height: 85%;
 
@@ -216,7 +211,6 @@ button{
     right: 0;
 }
 .color__btn{
-    /* background-color: brown; */
     width: 1.5rem;
     height: 1.5rem;
     padding: 25px;
@@ -234,7 +228,6 @@ button{
     transform: scale(1.1);
 }
 .color__red{
-    /* background-color: red; */
     top: 20px;
     left: 20px;
 }
@@ -242,7 +235,6 @@ button{
     background-color: red;
 }
 .color__green{
-    /* background-color: lime; */
     bottom: 20px;
     left: 20px;
 }
@@ -250,7 +242,6 @@ button{
     background-color: lime;
 }
 .color__blue{
-    /* background-color: blue; */
     bottom: 20px;
     right: 20px;
 }
@@ -258,17 +249,14 @@ button{
     background-color: blue;
 }
 .color__none{
-    /* background-color: grey; */
     top: 20px;
     right: 20px;
     border: none;
 }
 .color__svg{
-    /* background-color: aqua; */
     width: 80%;
     height: 80%;
-    /* margin: auto; */
-    /* padding: 25px; */
+
     position: absolute;
     top: 0;
     left: 0;
@@ -303,7 +291,6 @@ button{
     transform: translateX(0%) translateY(0%);
 }
 .corner__img{
-    /* background-color: rgba(122, 217, 255, 0.507); */
     width: 80%;
     padding: .625rem;
 
@@ -316,11 +303,6 @@ button{
     left: 0;
 }
 .home__black{
-    /* background-color: rgba(122, 217, 255, 0.507); */
-    /* width: 250px; */
-    /* height: 250px; */
-    /* border-bottom-right-radius: 60%; */
-
     position: absolute;
     top: 0;
     left: 0;
@@ -330,13 +312,10 @@ button{
     transition: 0.2s all 0.05s ease;
 }
 .home__hide:hover .home__black{
-    /* background-color: brown; */
     opacity: 1;
-    /* transform: translateX(0%) translateY(0%); */
 }
 .drop__img{
     height: 80%;
-    /* background-image: url(../assets/icon-drop-white.png); */
     background-repeat: no-repeat;
     background-position:center;
     background-size: contain;
@@ -345,18 +324,6 @@ button{
     right: 0;
 
     animation: rgb__white 5s 0s ease infinite both;
-}
-.drop__black{
-    height: 80%;
-    /* background-image: url(../assets/icon-drop-black.png); */
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size: contain;
-
-    top: 0;
-    right: 0;
-
-    animation: rgb__black 5s 0s ease infinite both;
 }
 .linkedin__img{
     bottom: 0;
@@ -367,15 +334,10 @@ button{
     right: 0;
 }
 
-/*-------------------------------------------------*/
-
+/*================ Header =================*/
 .header{
-    /* background-color: burlywood; */
-    /* width: 1000px; */
     width: 70%;
-    /* min-height: 20vh; */
     min-height: 200px;
-    /* padding: .625rem; */
 
     display: flex;
     flex-flow: column nowrap;
@@ -387,15 +349,10 @@ button{
 
     z-index: 1;
 
-    /* left: calc( 50% - 1000px / 2 ); */
     left: calc( 50% - 70% / 2 );
 }
 .header__h1{
-    /* background-color: orange; */
-
-    color: white;
     font-size: 6rem;
-    font-family: 'Caveat', cursive;
     text-transform: uppercase;
     text-align: center;
 
@@ -410,19 +367,9 @@ button{
 
     animation: grow 1.2s 0s ease 1 backwards;
 }
-@keyframes grow{
-    0%{
-        transform: scaleX(0);
-    }
-    100%{
-        transform: scaleX(1);
-    }
-}
 
-/*-------------------------------------------------*/
-
+/*===================== Main ======================*/
 .main{
-    /* background-color: aqua; */
     height: 100vh;
     padding: .625rem;
 
@@ -432,7 +379,6 @@ button{
     align-items: center;
 }
 .main__carousel{
-    /* background-color: green; */
     width: 100%;
     height: 620px;
     padding: .5rem;
@@ -443,13 +389,8 @@ button{
     align-items: center;
 }
 .main__area{
-    /* background-color: lightsalmon; */
-    /* width: 100%; */
-    /* width: 400%; */
     width: calc( 1900px * 4 );
-    /* height: 50vh; */
     height: calc( 2 * 18.75rem + .5rem );
-    /* padding: 10px; */
 
     display: flex;
     flex-flow: row nowrap;
@@ -459,49 +400,20 @@ button{
 
     transform: translateX( calc( -100% * 1 / 4 ));
 
-    /* animation: carousel__infinite 120s 0s linear infinite; */
     animation: carousel__infinite 60s 0s linear infinite;
-    /* animation: carousel__infinite 30s 0s linear infinite; */
-
-    /* transform: translateX(-50%); */
-}
-@keyframes carousel__infinite{
-    0%{
-        transform: translateX( calc( -100% * 1 / 4 ));
-    }
-    100%{
-        transform: translateX( calc( -100% * 3 / 4 ));
-    }
 }
 .main__grid{
-    /* background-color: brown; */
-    /* width: 100%; */
-    /* width: calc( 100% / 3 ); */
-    /* width: calc( 100% / 2 ); */
-    /* width: 100%; */
     width: 1900px;
-    /* height: calc( 35rem - .5rem - .5rem ); */
-    /* height: 34rem; */
     height: 100%;
 
     display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    /* grid-template-columns: repeat( auto-fit , minmax( 14% , 1fr ) ); */
-    /* grid-template-columns: repeat( auto-fit , minmax( 300px , 1fr ) ); */
     grid-template-columns: repeat( 6, 1fr );
-    /* grid-auto-rows: calc( ( 34rem - .5rem - .5rem ) / 3 ); */
-    /* grid-auto-rows: calc( 33rem / 2 ); */
-    /* grid-auto-rows: 50%; */
     gap: .5rem;
 }
 .main__cell{
     background-color: black;
-    /* padding: .5rem; */
-
     border: 2px solid white;
     border-radius: 20px;
-    /* box-shadow: 0px 0px 20px 1px white; */
-    /* box-shadow: 0px 0px 20px black inset; */
 
     display: flex;
     flex-flow: row nowrap;
@@ -512,7 +424,6 @@ button{
     overflow: hidden;
     cursor: crosshair;
 
-    /* background-image: url(../assets/gallery/img-drawing-car.png); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -523,7 +434,6 @@ button{
 }
 
 /* Añado las imagenes y videos desde CSS como background-image para facilitar el responsive ya que no me funciona meter la característica 'objet-fit: fill' en la clase .cell__media de las imágenes. Dejo comentada esa parte en gallery.html/.css
-
 Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqueo de renderizado" ¿Así no hay problema con loading lazy en el caso de background-img?*/
 
 .cell__mug{
@@ -561,11 +471,6 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
     grid-column: span 1;
     grid-row: span 1;
 }
-/* .cell__video{   esto no funciona así
-    background-image: url(../assets/gallery/vid-pixelart-sneeze.mp4);
-    grid-column: span 1;
-    grid-row: span 1;
-} */
 .cell__car{
     background-image: url(../assets/gallery/img-drawing-car.webp);
     grid-column: span 3;
@@ -596,65 +501,20 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
     grid-column: span 1;
     grid-row: span 1;
 }
-/* .square__double{
-    grid-column: span 2;
-    grid-row: span 2;
-}
-.square__triple{
-    grid-column: span 3;
-    grid-row: span 3;
-}
-.row__single{
-    grid-column: span 2;
-    grid-row: span 1;
-}
-.row__double{
-    grid-column: span 3;
-    grid-row: span 2;
-}
-.row__triple{
-    grid-column: span 4;
-    grid-row: span 3;
-}
-.column__single{
-    grid-column: span 1;
-    grid-row: span 2;
-}
-.column__double{
-    grid-column: span 2;
-    grid-row: span 3;
-} */
 .cell__media{
-    /* background-color: lightgreen; */
-
-    /* object-fit: cover; */
     width: 100%;
 
     position: absolute;
 
     cursor: crosshair;
 }
-/* .zoom__out{
-    width: 80%;
-} */
 .cell__text{
     width: 100%;
-        /* height: 100%; */
     min-height: 100px;
-        /* background-color: red; */
-
-        /* background-image: linear-gradient(rgba(255, 255, 255, 0), white);
-        color: black; */
     background-image: linear-gradient(rgba(0, 0, 0, 0), black);
-    color: white;
 
     font-size: 2rem;
-    font-family: 'Caveat', cursive;
     text-transform: uppercase;
-
-        /* position: absolute;
-        bottom: 0;
-        left: 0; */
 
     position: absolute;
     bottom: -50%;
@@ -670,24 +530,13 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
 
     transition: .2s all 0s ease;
 }
-/* .text__square{
-    position: absolute;
-    bottom: -50%;
-    height: 50px;
-} */
-/* .main__cell:hover .cell__img{
-    transform: scale(1.5);
-} */
 .main__cell:hover .cell__text{
     opacity: 1;
     bottom: 0;
-    /* animation: slideDown .5s ease 1; */
 }
 
-/*-------------------------------------------------*/
-
+/*================ Footer =================*/
 .footer{
-    /* background-color: aqua; */
     width: 70%;
     min-height: 200px;
     
@@ -701,7 +550,6 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
     align-items: center;
 }
 .footer__a{
-    /* background-color: burlywood; */
     width: 300px;
 
     display: flex;
@@ -710,7 +558,6 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
     align-items: center;
 }
 .footer__h2{
-    /* background-color: yellow; */
     width: 150px;
     height: 150px;
     padding: .625rem;
@@ -728,225 +575,71 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
     z-index: 1;
 }
 
-/*-------------------------------------------------*/
-
+/*================ @Keyframes =================*/
 @keyframes rgb__white{
     0%{
-        /* background-color: rgba(255, 0, 0, 0.2); */
-        /* filter: hue-rotate(0deg) saturate(100%) brightness(50%); */
         background-image: url(../assets/icon-drop-white-red.png);
     }
     33%{
-        /* background-color: rgba(0, 255, 0, 0.2); */
-        /* filter: hue-rotate(120deg) saturate(1000%) brightness(1000%); */
         background-image: url(../assets/icon-drop-white-green.png);
     }
     66%{
-        /* background-color: rgba(0, 0, 255, 0.2); */
-        /* filter: hue-rotate(60deg) saturate(1000%) brightness(500%); */
         background-image: url(../assets/icon-drop-white-blue.png);
     }
     100%{
-        /* background-color: rgba(255, 0, 0, 0.2); */
-        /* filter: hue-rotate(50deg) saturate(50%) brightness(50%); */
         background-image: url(../assets/icon-drop-white-red.png);
     }
 }
-@keyframes rgb__black{
+@keyframes grow{
     0%{
-        /* background-color: rgba(255, 0, 0, 0.2); */
-        /* filter: hue-rotate(0deg) saturate(100%) brightness(50%); */
-        background-image: url(../assets/icon-drop-black-red.png);
-    }
-    33%{
-        /* background-color: rgba(0, 255, 0, 0.2); */
-        /* filter: hue-rotate(120deg) saturate(1000%) brightness(1000%); */
-        background-image: url(../assets/icon-drop-black-green.png);
-    }
-    66%{
-        /* background-color: rgba(0, 0, 255, 0.2); */
-        /* filter: hue-rotate(60deg) saturate(1000%) brightness(500%); */
-        background-image: url(../assets/icon-drop-black-blue.png);
+        transform: scaleX(0);
     }
     100%{
-        /* background-color: rgba(255, 0, 0, 0.2); */
-        /* filter: hue-rotate(50deg) saturate(50%) brightness(50%); */
-        background-image: url(../assets/icon-drop-black-red.png);
+        transform: scaleX(1);
+    }
+}
+@keyframes carousel__infinite{
+    0%{
+        transform: translateX( calc( -100% * 1 / 4 ));
+    }
+    100%{
+        transform: translateX( calc( -100% * 3 / 4 ));
     }
 }
 
-/*-------------------------------------------------*/
-
-/* @media(max-width: 1900px){
-    .main__grid{
-        height: 32rem;
-
-        grid-auto-rows: calc( 31rem / 2 );
-    }
-}
-@media(max-width: 1800px){
-    .main__grid{
-        height: 31rem;
-
-        grid-auto-rows: calc( 30rem / 2 );
-    }
-}
-@media(max-width: 1750px){
-    .main__grid{
-        height: 30rem;
-
-        grid-auto-rows: calc( 29rem / 2 );
-    }
-}
-@media(max-width: 1690px){
-    .main__grid{
-        height: 29rem;
-
-        grid-auto-rows: calc( 28rem / 2 );
-    }
-}
-@media(max-width: 1635px){
-    .main__grid{
-        height: 34rem;
-
-        grid-auto-columns: calc( 300rem / 2 );
-        grid-auto-rows: calc( 33rem / 2 );
-    }
-}
-@media(max-width: 1400px){
-    .main__grid{
-        height: 27rem;
-
-        grid-auto-rows: calc( 26rem / 2 );
-    }
-}
-@media(max-width: 1300px){
-    .main__grid{
-        height: 26rem;
-
-        grid-auto-rows: calc( 25rem / 2 );
-    }
-}
-@media(max-width: 1200px){
-    .main__grid{
-        height: 25rem;
-
-        grid-auto-rows: calc( 24rem / 2 );
-    }
-}
-@media(max-width: 1100px){
-    .main__grid{
-        height: 24rem;
-
-        grid-auto-rows: calc( 23rem / 2 );
-    }
-}
-@media(max-width: 1000px){
-    .main__grid{
-        height: 23rem;
-
-        grid-auto-rows: calc( 22rem / 2 );
-    }
-}
-@media(max-width: 900px){
-    .main__grid{
-        height: 22rem;
-
-        grid-auto-rows: calc( 21rem / 2 );
-    }
-}
-@media(max-width: 800px){
-    .main__grid{
-        height: 21rem;
-
-        grid-auto-rows: calc( 20rem / 2 );
-    }
-}
-@media(max-width: 700px){
-    .main__grid{
-        height: 20rem;
-
-        grid-auto-rows: calc( 19rem / 2 );
-    }
-}
-@media(max-width: 600px){
-    .main__grid{
-        height: 19rem;
-
-        grid-auto-rows: calc( 18rem / 2 );
-    }
-}
-@media(max-width: 500px){
-    .main__grid{
-        height: 18rem;
-
-        grid-auto-rows: calc( 17rem / 2 );
-    }
-}
-@media(max-width: 400px){
-    .main__grid{
-        height: 17rem;
-
-        grid-auto-rows: calc( 16rem / 2 );
-    }
-}
-@media(max-width: 300px){
-    .main__grid{
-        height: 16rem;
-
-        grid-auto-rows: calc( 15rem / 2 );
-    }
-}
-
+/*================ @Media =================*/
+/* Width */
 @media(max-width: 1400px){
     .corner, .corner__area{
         width: 9.375rem;
         height: 9.375rem;
     }
     .color__btn{
-            background-color: brown;
         width: 1rem;
         height: 1rem;
-        padding: 25px;
-        border: .125rem solid black;
-        border-radius: 20px;
-    
-        position: absolute;
-    
-        transition: .2s all 0s ease;
     }
     .color__red{
-            background-color: red;
         top: 5px;
         left: 5px;
     }
     .color__green{
-            background-color: lime;
         bottom: 5px;
         left: 5px;
     }
     .color__blue{
-            background-color: blue;
         bottom: 5px;
         right: 5px;
     }
     .color__none{
-            background-color: grey;
         top: 5px;
         right: 5px;
         border: none;
     }
     .header{
-            width: 600px;
         min-height: 150px;
-            left: calc( 50% - 600px / 2 );
     }
     .header__h1{
         font-size: 4rem;
-        font-family: 'Caveat', cursive;
-        text-transform: uppercase;
-    
-        transition: 0.2s all 0s ease;
     }
     .footer{
         min-height: 150px;
@@ -974,92 +667,11 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
         left: calc( 50% - 56% / 2 );
     }
     .header__h1{
-        font-size: 2.9rem;
-    }
-} */
-@media(max-width: 1500px){}
-@media(max-width: 1400px){
-    .corner, .corner__area{
-        width: 9.375rem;
-        height: 9.375rem;
-    }
-    .color__btn{
-        /* background-color: brown; */
-        width: 1rem;
-        height: 1rem;
-        padding: 25px;
-        border: .125rem solid black;
-        border-radius: 20px;
-    
-        position: absolute;
-    
-        transition: .2s all 0s ease;
-    }
-    .color__red{
-        /* background-color: red; */
-        top: 5px;
-        left: 5px;
-    }
-    .color__green{
-        /* background-color: lime; */
-        bottom: 5px;
-        left: 5px;
-    }
-    .color__blue{
-        /* background-color: blue; */
-        bottom: 5px;
-        right: 5px;
-    }
-    .color__none{
-        /* background-color: grey; */
-        top: 5px;
-        right: 5px;
-        border: none;
-    }
-    .header{
-        min-height: 150px;
-    }
-    .header__h1{
-        font-size: 4rem;
-        font-family: 'Caveat', cursive;
-        text-transform: uppercase;
-    
-        transition: 0.2s all 0s ease;
-    }
-    .footer{
-        min-height: 150px;
-    }
-    
-}
-@media(max-width: 1200px) /*or (max-height: 750px)*/{}
-@media(max-width: 1100px){
-    .header{
-        width: 65%;
-        left: calc( 50% - 65% / 2 );
-    }
-}
-@media(max-width: 900px) /*or (max-height: 600px)*/{
-    .corner, .corner__area{
-        width: 9.375rem;
-        height: 9.375rem;
-    }
-    .header{
-        width: 60%;
-        left: calc( 50% - 60% / 2 );
-    }
-}
-@media(max-width: 750px) /*or (max-height: 525px)*/{
-    .header{
-        width: 56%;
-        left: calc( 50% - 56% / 2 );
-    }
-    .header__h1{
         font-size: 2.4rem;
     }
 }
 @media(max-width: 450px){
     body{
-        /* overflow: auto; */
         cursor: crosshair;
     }
     .cursor{
@@ -1102,10 +714,8 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
         height: 70%;
     }
 }
-@media(max-width: 360px){}
 
-
-
+/* Height */
 @media(max-height: 1000px){
     .main__carousel{
         height: 520px;
@@ -1113,10 +723,6 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
     .main__area{
         height: calc( 2 * 250px + .5rem );
     }
-    /* .main__grid{
-        height: 70%;
-        top: calc( 50% - 70% / 2 );
-    } */
 }
 @media(max-height: 900px){
     .corner, .corner__area{
@@ -1124,49 +730,31 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
         height: 9.375rem;
     }
     .color__btn{
-        /* background-color: brown; */
         width: 1rem;
         height: 1rem;
-        padding: 25px;
-        border: .125rem solid black;
-        border-radius: 20px;
-    
-        position: absolute;
-    
-        transition: .2s all 0s ease;
     }
     .color__red{
-        /* background-color: red; */
         top: 5px;
         left: 5px;
     }
     .color__green{
-        /* background-color: lime; */
         bottom: 5px;
         left: 5px;
     }
     .color__blue{
-        /* background-color: blue; */
         bottom: 5px;
         right: 5px;
     }
     .color__none{
-        /* background-color: grey; */
         top: 5px;
         right: 5px;
         border: none;
     }
     .header{
-        /* width: 600px; */
         min-height: 50px;
-        /* left: calc( 50% - 600px / 2 ); */
     }
     .header__h1{
         font-size: 2.4rem;
-        font-family: 'Caveat', cursive;
-        text-transform: uppercase;
-    
-        transition: 0.2s all 0s ease;
     }
     .main__carousel{
         height: 420px;
@@ -1174,10 +762,6 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
     .main__area{
         height: calc( 2 * 200px + .5rem );
     }
-    /* .main__grid{
-        height: 60%;
-        top: calc( 50% - 60% / 2 );
-    } */
     .footer{
         background-color: black;
         border: 2px solid white;
@@ -1189,8 +773,6 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
         bottom: -1%;
         left: calc( 50% - 75px / 2 );
 
-        /* z-index: -1; */
-
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
     }
@@ -1200,14 +782,12 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
         padding: 0;
     }
     .footer__logo{
-        /* background-color: aqua; */
         width: 70%;
         height: 70%;
     }
 }
 @media(max-height: 680px){
     body{
-        /* overflow: auto; */
         cursor: crosshair;
     }
     .cursor{
@@ -1233,15 +813,6 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
     .main__area{
         width: calc( 2900px * 4 );
         height: calc( 2 * 200px + .5rem );
-
-        /* transform: translateX( calc( -100% * 1 / 4 )); */
-
-        /* animation: carousel__infinite 120s 0s linear infinite; */
-        /* animation: carousel__infinite 60s 0s linear infinite; */
-        /* animation: carousel__infinite 30s 0s linear infinite; */
-
-        /* transform: translateX(-10%); */
-        /* transform: translateX(-50%); */
     }
     .main__grid{
         width: 2900px;
@@ -1256,9 +827,6 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
         width: calc( 100% * 5 / 6 );
         height: 100%;
     }
-    /* .cell__media{
-        width: 100%;
-    } */
     .cell__mug{
         width: calc( 100% / 7 );
         height: 100%;
@@ -1325,30 +893,6 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
         width: calc( 100% / 6 );
         height: 100%;
     }
-    /* .footer{
-        background-color: black;
-        border: 2px solid white;
-
-        width: 75px;
-        min-height: 75px;
-
-        position: fixed;
-        bottom: -1%;
-        left: calc( 50% - 75px / 2 );
-
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-    }
-    .footer__h2{
-        width: 100%;
-        height: 100%;
-        padding: 0;
-    }
-    .footer__logo{
-        background-color: aqua;
-        width: 70%;
-        height: 70%;
-    } */
 }
 @media(max-height: 560px){
     .main__carousel{
@@ -1357,88 +901,9 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
     .main__area{
         width: calc( 1500px * 4 );
         height: calc( 2 * 100px + .5rem );
-
-        /* transform: translateX( calc( -100% * 1 / 4 )); */
-
-        /* animation: carousel__infinite 120s 0s linear infinite; */
-        /* animation: carousel__infinite 60s 0s linear infinite; */
-        /* animation: carousel__infinite 30s 0s linear infinite; */
-
-        /* transform: translateX(-10%); */
-        /* transform: translateX(-50%); */
     }
     .main__grid{
         width: 1500px;
         height: 100%;
     }
 }
-@media(max-height: 460px){
-    /* .main__carousel{
-        height: 220px;
-    }
-    .main__area{
-        background-color: gray;
-        height: calc( 2 * 100px + .5rem );
-    } */
-
-    /* body{
-        overflow: auto;
-        cursor: crosshair;
-    }
-    .cursor{
-        display: none;
-    }
-    .corner{
-        display: none;
-    } */
-    /* .header{
-        background-color: black;
-        width: 100%;
-        min-height: 50px;
-        left: calc( 50% - 100% / 2 );
-
-        z-index: -1;
-    }
-    .header__h1{
-        font-size: 2.9rem;
-    }
-    /* .footer{
-        background-color: black;
-        border: 2px solid white;
-
-        width: 75px;
-        min-height: 75px;
-
-        position: fixed;
-        bottom: -1%;
-        left: calc( 50% - 75px / 2 );
-
-        z-index: -1;
-
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-    }
-    .footer__h2{
-        width: 100%;
-        height: 100%;
-        padding: 0;
-    }
-    .footer__logo{
-        background-color: aqua;
-        width: 70%;
-        height: 70%;
-    } */
-}
-/* @media(max-height: 600px){
-    .corner, .corner__area{
-        width: 9.375rem;
-        height: 9.375rem;
-    }
-    .header{
-        width: 60%;
-        left: calc( 50% - 60% / 2 );
-    }
-} */
-/* @media(max-height: 525px){
-
-} */
