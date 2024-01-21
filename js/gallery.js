@@ -1,5 +1,15 @@
 'use strict'
 
+/*--------------------------------------------------------------*\
+*gallery.js
+*   Interacciones:
+*       - Animaciones y efectos
+*   Estructura:
+*       - Bloques de funcionalidades:
+*           > Constantes y variables
+*           > Funciones
+*---------------------------------------------------------------*/
+
 //Limpiamos la consola
 console.clear()
 

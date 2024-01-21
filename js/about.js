@@ -1,5 +1,15 @@
 'use strict'
 
+/*--------------------------------------------------------------*\
+*about.js
+*   Interacciones:
+*       - Animaciones, efectos y navegación por las diferentes secciones del archivo about.html asociado
+*   Estructura:
+*       - Bloques de funcionalidades:
+*           > Constantes y variables
+*           > Funciones
+*---------------------------------------------------------------*/
+
 //Limpiamos la consola
 console.clear()
 

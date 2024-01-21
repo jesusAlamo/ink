@@ -1,5 +1,15 @@
 'use strict'
 
+/*--------------------------------------------------------------*\
+*inktober.js
+*   Interacciones:
+*       - Animaciones, efectos y muestreo de los diferentes lightboxes del archivo inktober.html asociado
+*   Estructura:
+*       - Bloques de funcionalidades:
+*           > Constantes y variables
+*           > Funciones
+*---------------------------------------------------------------*/
+
 //Limpiamos la consola
 console.clear()
 
@@ -165,8 +175,8 @@ colorNone.addEventListener('click',function(){
 
 
 
-//----------------CAMBIO DE COLORES DE LA COLA DEL PUNTERO---------------------//
-// Función para mostrar y ocultr el lightbox que se visualiza al pulsar el día al que corresponde:
+//----------------VISUALIZACIÓN DE LIGHTBOXES---------------------//
+// Función para mostrar y ocultar el lightbox que se visualiza al pulsar el día al que corresponde:
 
 ////Definimos un array de botones de selección de día del inktober (.main__number), un array de lightbox (.main__lightbox) y un array de botones cierre de lightbox (.lightbox__btn)
 let mainNumber        = document.querySelectorAll('.main__number')

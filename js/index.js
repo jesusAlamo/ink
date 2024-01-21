@@ -1,5 +1,15 @@
 'use strict'
 
+/*--------------------------------------------------------------*\
+*index.js
+*   Interacciones:
+*       - Animaciones, efectos y mejor visualización del archivo index.html asociado
+*   Estructura:
+*       - Bloques de funcionalidades:
+*           > Constantes y variables
+*           > Funciones
+*---------------------------------------------------------------*/
+
 //Limpiamos la consola
 // console.clear()
 
