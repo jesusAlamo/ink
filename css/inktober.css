@@ -418,11 +418,12 @@ button{
     font-size: 6.5rem;
     letter-spacing: 8px;
 }
-.header__separator{                     /* <-- Debería ser un :after */
+.header::after{
+    content: '';
+
     background-color: white;
     width: 100%;
     min-height: 2px;
-    margin-bottom: 1rem;
 
     animation: grow 1.2s 0s ease 1 backwards;
 }
@@ -653,15 +654,22 @@ button{
 /*-------------------------------------------------*/
 
 .footer{
-    /* background-color: burlywood; */
-    width: 300px;
-    /* min-height: 11.875rem; */
+    /* background-color: aqua; */
+    width: 70%;
     min-height: 200px;
-    /* padding: .625rem; */
-
+    
     position: fixed;
     bottom: 0;
-    left: calc( 50% - 300px / 2 );
+    left: calc( 50% - 70% / 2 );
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.footer__a{
+    /* background-color: burlywood; */
+    width: 300px;
 
     display: flex;
     flex-flow: row nowrap;
@@ -1132,11 +1140,12 @@ button{
 
         position: fixed;
         bottom: -1%;
-        left: calc( 50% - 75px / 2 );
+        /* left: calc( 50% - 75px / 2 ); */
+        left: -1%;
 
-        z-index: -1;
+        /* z-index: -1; */
 
-        border-top-left-radius: 30px;
+        border-top-left-radius: 0;
         border-top-right-radius: 30px;
     }
     .footer__h2{

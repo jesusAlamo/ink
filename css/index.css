@@ -553,7 +553,7 @@ button{
 .main__vertical{
     flex-flow: column nowrap;
 }
-.mobile__h1{
+.mobile__h2{
     /* background-color: burlywood; */
     /* width: 80%; */
     /* width: 70%; */
@@ -618,7 +618,7 @@ button{
     padding: .625rem;
     border-radius: 1.875rem;
 }
-.mobile__h2{
+.mobile__h3{
     font-size: 2rem;
     font-family: 'Caveat', cursive;
     line-height: 1rem;

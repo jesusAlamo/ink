@@ -546,7 +546,16 @@ label{
 
     animation: show 1.2s 0s ease 1 backwards;
 }
-.header__separator{                     /* <-- Debería ser un :after */
+/* .header__separator{                     <-- Debería ser un :after
+    background-color: white;
+    width: 100%;
+    min-height: 2px;
+
+    animation: grow 1.2s 0s ease 1 backwards;
+} */
+.header::after{
+    content: '';
+
     background-color: white;
     width: 100%;
     min-height: 2px;
@@ -766,7 +775,7 @@ label{
     justify-content: space-between;
     align-items: flex-start;
 }
-.section__h2{
+.section__h1 , .section__h2{
     /* background-color: lightcoral; */
     width: 100%;
 
@@ -779,7 +788,7 @@ label{
     line-height: 1.3rem;
     text-align: left;
 }
-.section__separator{                     /* <-- Debería ser un :after */
+.section__separator{        /* <-- Debería ser un :after pero no sale bien*/
     background-color: white;
     /* width: 220px; */
     width: 85%;

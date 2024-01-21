@@ -401,11 +401,12 @@ button{
 
     transition: 0.2s all 0s ease;
 }
-.header__separator{                     /* <-- Debería ser un :after */
+.header::after{
+    content: '';
+
     background-color: white;
     width: 100%;
     min-height: 2px;
-    margin-bottom: 1rem;
 
     animation: grow 1.2s 0s ease 1 backwards;
 }
@@ -627,6 +628,7 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
     /* background-color: lightgreen; */
 
     /* object-fit: cover; */
+    width: 100%;
 
     position: absolute;
 
@@ -685,15 +687,22 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
 /*-------------------------------------------------*/
 
 .footer{
-    /* background-color: burlywood; */
-    width: 300px;
-    /* min-height: 11.875rem; */
+    /* background-color: aqua; */
+    width: 70%;
     min-height: 200px;
-    /* padding: .625rem; */
-
+    
     position: fixed;
     bottom: 0;
-    left: calc( 50% - 300px / 2 );
+    left: calc( 50% - 70% / 2 );
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.footer__a{
+    /* background-color: burlywood; */
+    width: 300px;
 
     display: flex;
     flex-flow: row nowrap;
@@ -716,7 +725,7 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
     width: 100%;
     height: 100%;
 
-    /* z-index: 1; */
+    z-index: 1;
 }
 
 /*-------------------------------------------------*/
@@ -1247,9 +1256,9 @@ Por otro lado, MDN dice que: "Por defecto, CSS se trata como un recurso de bloqu
         width: calc( 100% * 5 / 6 );
         height: 100%;
     }
-    .main__cell{
-        /* background-size: contain; */
-    }
+    /* .cell__media{
+        width: 100%;
+    } */
     .cell__mug{
         width: calc( 100% / 7 );
         height: 100%;

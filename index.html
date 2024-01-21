@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INK</title>
+    <meta name="description" content="Autor: Jesús Álamo,
+    Ilustraciones: Jesús Álamo, Descripción: Práctica de diseño web frontend para el Curso de Diseño Web con HTML5 y CSS3 impartid por CEI Centro de Estudios de Innovación, Diseño y Marketing.">
 
-    <!-- <link rel="icon" type="image/x-icon" href="./assets/favicon.png"> -->
+    <title>INK</title>
 
         <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
 
@@ -23,18 +22,13 @@
         
         <meta name="theme-color" content="#ffffff">
 
-
-
     <link rel="stylesheet" type="text/css" href="./css/index.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 
     <script src="./js/index.js" defer></script>
-
-    <!-- <link rel="" type="text/html" href="about.html">        qué rel? -->
-    <!-- <link rel="" type="text/html" href="maintenance.html">  qué rel? -->
 
 </head>
 
@@ -53,12 +47,10 @@
     </div>
 
     <div class="corner top__left">
-        <img src="./assets/icon-closed-eye-white.png" alt="closed eye button" title="closed eye button" loading="lazy" class="corner__img">
-        <button class="corner__area eye__hide">
-            <img src="./assets/icon-closed-eye-black.png" alt="closed eye button" title="closed eye button" loading="lazy" class="corner__img eye__img">
-            <!-- <img src="./assets/icon-closed-eye-black.png" alt="closed eye button" title="closed eye button" loading="lazy" class="corner__img eye__img"> -->
+        <img src="./assets/icon-closed-eye-white.png" alt="botón de ojo blanco" loading="lazy" class="corner__img">
+        <button class="corner__area eye__hide" title="clarividencia">
+            <img src="./assets/icon-closed-eye-black.png" alt="botón de ojo negro" loading="lazy" class="corner__img eye__img">
         </button>
-        <!-- <img src="./assets/icon-closed-eye-black.png" alt="closed eye button" title="closed eye button" loading="lazy" class="corner__img eye__black"> -->
     </div>
 
     <div class="corner top__right">
@@ -67,16 +59,16 @@
         </div>
         <div class="corner__area drop__hide">
             <div class="color__option">
-                <button class="color__btn color__red">
+                <button class="color__btn color__red" title="rojo">
 
                 </button>
-                <button class="color__btn color__green">
+                <button class="color__btn color__green" title="verde">
     
                 </button>
-                <button class="color__btn color__blue">
+                <button class="color__btn color__blue" title="zul">
     
                 </button>
-                <button class="color__btn color__none">
+                <button class="color__btn color__none" title="limpiar">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" color="black" fill="currentColor" class="color__svg" viewBox="0 0 16 16">
                         <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
                       </svg>
@@ -85,17 +77,17 @@
         </div>
     </div>
 
-    <a href="https://es.linkedin.com/in/jesus-aurelio-alamo-alamo" class="corner bottom__left" target="_blank" rel="noreferrer noopener nofollow">
-        <img src="./assets/icon-linkedin-white.png" alt="link a linkedin" title="linkedin logo image" loading="lazy" class="corner__img linkedin__img">
+    <a href="https://es.linkedin.com/in/jesus-aurelio-alamo-alamo" class="corner bottom__left" target="_blank" rel="noreferrer noopener nofollow"> <!-- W3C no me deja meter title en <a> pero sí en <img> -->
+        <img src="./assets/icon-linkedin-white.png" alt="logotipo de linkedin blanco" loading="lazy" class="corner__img linkedin__img">
         <div class="corner__area linkedin__hide">
-            <img src="./assets/icon-linkedin-black.png" alt="link a linkedin" title="linkedin logo image" loading="lazy" class="corner__img linkedin__img">
+            <img src="./assets/icon-linkedin-black.png" alt="logotipo de linkedin negro" title="link a Linkedin" loading="lazy" class="corner__img linkedin__img">
         </div>
     </a>
 
-    <a href="https://github.com/jesusAlamo/ink" class="corner bottom__right" target="_blank" rel="noreferrer noopener nofollow">
-        <img src="./assets/icon-github-white.png" alt="link a github" title="github logo image" loading="lazy" class="corner__img github__img">
+    <a href="https://github.com/jesusAlamo/ink" class="corner bottom__right" target="_blank" rel="noreferrer noopener nofollow"> <!-- W3C no me deja meter title en <a> pero sí en <img> -->
+        <img src="./assets/icon-github-white.png" alt="logotipo de github blanco" loading="lazy" class="corner__img github__img">
         <div class="corner__area github__hide">
-            <img src="./assets/icon-github-black.png" alt="link a github" title="github logo image" loading="lazy" class="corner__img github__img">
+            <img src="./assets/icon-github-black.png" alt="logotipo de github negro" title="link a Github" loading="lazy" class="corner__img github__img">
         </div>
     </a>
 
@@ -117,10 +109,9 @@
                     <div class="main__dot">
                         <!-- 1 -->
                     </div>
-                    <a href="inktober.html" title="main__a" class="main__a">
+                    <a href="inktober.html" title="link a Inktober" class="main__a">
                         <h2 class="main__h2">
-                            Inktober
-                            <!-- Proyectos -->    
+                            Inktober 
                         </h2>
                     </a>
                 </div>
@@ -135,11 +126,9 @@
                     <div class="main__dot">
                         <!-- 3 -->
                     </div>
-                    <a href="gallery.html" title="main__a" class="main__a">
+                    <a href="gallery.html" title="link a Galería" class="main__a">
                         <h2 class="main__h2">
                             Galería
-                            <!-- Herramientas -->
-                            <!-- En desarrollo -->
                         </h2>
                     </a>
                 </div>
@@ -156,7 +145,7 @@
                     <div class="main__dot">
                         <!-- 5 -->
                     </div>
-                    <a href="about.html" title="main__a" class="main__a">
+                    <a href="about.html" title="link a Sobre mi" class="main__a">
                         <h2 class="main__h2">
                             Sobre mi
                         </h2>
@@ -173,7 +162,7 @@
                     <div class="main__dot">
                         <!-- 7 -->
                     </div>
-                    <a href="about.html#contact" title="main__a" class="main__a">
+                    <a href="about.html#contact" title="link a Contacto" class="main__a">
                         <h2 class="main__h2">
                             Contacto
                         </h2>
@@ -187,37 +176,37 @@
 
 
         <div class="main__mobile main__horizontal">
-            <h1 class="mobile__h1">         /* cuidado con la cantidad de h1!!! */
+            <h2 class="mobile__h2">
                 <img src="./assets/ink-logo-v2-optimized.webp" alt="INK logo" loading="lazy" class="mobile__logo logo__horizontal">
-            </h1>
+            </h2>
             <nav class="mobile__nav">
                 <ul class="mobile__ul">
                     <li class="mobile__li delay__first">
-                        <a href="inktober.html" title="mobile__a" class="mobile__a">
-                            <h2 class="mobile__h2">
+                        <a href="inktober.html" title="link a Inktober" class="mobile__a">
+                            <h3 class="mobile__h3">
                                 Inktober
-                            </h2>
+                            </h3>
                         </a>
                     </li>
                     <li class="mobile__li delay__second">
-                        <a href="gallery.html" title="mobile__a" class="mobile__a">
-                            <h2 class="mobile__h2">
+                        <a href="gallery.html" title="link a Galería" class="mobile__a">
+                            <h3 class="mobile__h3">
                                 Galería
-                            </h2>
+                            </h3>
                         </a>
                     </li>
                     <li class="mobile__li  delay__third">
-                        <a href="about.html" title="mobile__a" class="mobile__a">
-                            <h2 class="mobile__h2">
+                        <a href="about.html" title="link a Sobre mi" class="mobile__a">
+                            <h3 class="mobile__h3">
                                 Sobre mi
-                            </h2>
+                            </h3>
                         </a>
                     </li>
                     <li class="mobile__li  delay__fourth">
-                        <a href="about.html#contact" title="mobile__a" class="mobile__a">
-                            <h2 class="mobile__h2">
+                        <a href="about.html#contact" title="link a Contacto" class="mobile__a">
+                            <h3 class="mobile__h3">
                                 Contacto
-                            </h2>
+                            </h3>
                         </a>
                     </li>
                 </ul>
@@ -225,37 +214,37 @@
         </div>
 
         <div class="main__mobile main__vertical">
-            <h1 class="mobile__h1">         /* cuidado con la cantidad de h1!!! */
+            <h2 class="mobile__h2">
                 <img src="./assets/ink-logo-v2-optimized.webp" alt="INK logo" loading="lazy" class="mobile__logo logo__vertical">
-            </h1>
+            </h2>
             <nav class="mobile__nav">
                 <ul class="mobile__ul">
                     <li class="mobile__li delay__first">
-                        <a href="inktober.html" title="mobile__a" class="mobile__a">
-                            <h2 class="mobile__h2">
+                        <a href="inktober.html" title="link a Inktober" class="mobile__a">
+                            <h3 class="mobile__h3">
                                 Inktober
-                            </h2>
+                            </h3>
                         </a>
                     </li>
                     <li class="mobile__li delay__second">
-                        <a href="gallery.html" title="mobile__a" class="mobile__a">
-                            <h2 class="mobile__h2">
+                        <a href="gallery.html" title="link a Galería" class="mobile__a">
+                            <h3 class="mobile__h3">
                                 Galería
-                            </h2>
+                            </h3>
                         </a>
                     </li>
                     <li class="mobile__li delay__third">
-                        <a href="about.html" title="mobile__a" class="mobile__a">
-                            <h2 class="mobile__h2">
+                        <a href="about.html" title="link a Sobre mi" class="mobile__a">
+                            <h3 class="mobile__h3">
                                 Sobre mi
-                            </h2>
+                            </h3>
                         </a>
                     </li>
                     <li class="mobile__li delay__fourth">
-                        <a href="about.html#contact" title="mobile__a" class="mobile__a">
-                            <h2 class="mobile__h2">
+                        <a href="about.html#contact" title="link a Contacto" class="mobile__a">
+                            <h3 class="mobile__h3">
                                 Contacto
-                            </h2>
+                            </h3>
                         </a>
                     </li>
                 </ul>

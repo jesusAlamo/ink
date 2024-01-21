@@ -1,6 +1,6 @@
 'use strict'
 
-console.clear()
+// console.clear()
 
 const cursor = document.querySelector('.cursor')
 
@@ -34,23 +34,23 @@ console.log( cursorTail )
 
     window.addEventListener( 'mousemove' , function( e ){
 
-        console.clear()
+        // console.clear()
 
         // console.log( 'e.clientX' )
         // console.log( e.clientX )
         // console.log( 'e.clientY' )
         // console.log( e.clientY )
 
-        const cursorX = e.clientX - 30
-        const cursorY = e.clientY - 30
+        const tailX = e.clientX - 30
+        const tailY = e.clientY - 30
 
-        console.log( 'cursorX' )
-        console.log( cursorX )
-        console.log( 'cursorY' )
-        console.log( cursorY )
+        console.log( 'tailX' )
+        console.log( tailX )
+        console.log( 'tailY' )
+        console.log( tailY )
 
         cursorTail.forEach(function(eachCursor, i){
-            cursorTail[i].style.transform = `translateX(${cursorX}px) translateY(${cursorY}px)`
+            cursorTail[i].style.transform = `translateX(${tailX}px) translateY(${tailY}px)`
         })
     })
 
@@ -142,11 +142,37 @@ console.log( cursorInner )
 //// MISMO INDEX .main__section le ADD active
 //// MISMO INDEX .header__btn le ADD active
 
+// const urlAbout = document.URL
+const urlId = ["#author","#work_experience","#academic_experience","#contact"]
+// const urlAuthor = document.URL + "#author"
+// const urlWork = document.URL + "#work_experience"
+// const urlAcadmic = document.URL + "#academic_experience"
+// const urlContact = document.URL + "#contact"
+// const urlRedirect = [urlAuthor,urlWork,urlAcadmic,urlContact]
 const headerBtn = document.querySelectorAll('.header__btn')
 const mainSection = document.querySelectorAll('.main__section')
 
+console.log(urlId)
+// console.log(urlAuthor)
+// console.log(urlWork)
+// console.log(urlAcadmic)
+// console.log(urlContact)
+// console.log(urlRedirect
+
 console.log(headerBtn)
 console.log(mainSection)
+
+const urlActual = document.URL
+
+console.log(document.URL)
+console.log(urlActual)
+
+if (urlActual.includes(urlId[3])){
+    headerBtn.forEach(function(eachBtn,i){
+        headerBtn[i].classList.remove('active')
+        headerBtn[3].classList.add('active')
+    })
+}
 
 headerBtn.forEach(function(eachBtn,i){
 
@@ -154,13 +180,12 @@ headerBtn.forEach(function(eachBtn,i){
 
         mainSection.forEach(function(eachSection, i){
 
-            // mainSection[i].classList.remove('active')
             headerBtn[i].classList.remove('active')
 
         })
 
-        // mainSection[i].classList.add('active')
         headerBtn[i].classList.add('active')
+        window.open(urlId[i],"_self")
 
     })
 })
