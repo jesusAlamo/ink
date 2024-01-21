@@ -1,137 +1,135 @@
 'use strict'
 
+//Limpiamos la consola
 console.clear()
 
-const cursor = document.querySelector('.cursor')
+//-------------------------CIRCULO Y COLA COMO PUNTERO---------------------//
+// Función para que el .cursor y su cola formada por un conjunto/array de .cursor__tail sigan al puntero mediante le valor devuelto (return) por la función MouseMove, la cual, entre otras cosas, nos ofrece la posición del puntero en la pantalla (CUIDADO CON ESTO porque no da la posición dentro de un elemento de la web (div/a/button/..) o al menos, no lo he conseguido encontrar o implementar. Entiendo que con alguna de las propiedades de MouseEvent se podría llegar a lograr (https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent)):
 
-console.log( cursor )
+////Definimos una constante para el circulo (.cursor) y un array de circulos de cola (.cursor__tail)
+const cursor                = document.querySelector('.cursor')
+let cursorTail            = document.querySelectorAll('.cursor__tail')
 
-    window.addEventListener( 'mousemove' , function( e ){
+////Cuando el ratón se mueve (mousemove)
+window.addEventListener( 'mousemove' , function( e ){
 
-        console.clear()
+    ////A las coordenadas devueltas (e.client X, e.clientY) por la función de evento (e) se resta la mitad del ancho (30px) del circulo (.cursor) y los circulos de la cola (.cursor__tail)
+    const cursorX = e.clientX - 30
+    const cursorY = e.clientY - 30
 
-        // console.log( 'e.clientX' )
-        // console.log( e.clientX )
-        // console.log( 'e.clientY' )
-        // console.log( e.clientY )
-
-        const cursorX = e.clientX - 30
-        const cursorY = e.clientY - 30
-
-        console.log( 'cursorX' )
-        console.log( cursorX )
-        console.log( 'cursorY' )
-        console.log( cursorY )
-
-        // cursor.style.transform = 'translateX('+cursorX+'px) translateY('+cursorY+'px)'
-        cursor.style.transform = `translateX(${cursorX}px) translateY(${cursorY}px)`
-
+    ////Y se traslada el circulo (.cursor) y los circulos de la cola (.cursor__tail) a esas nuevas coordenadas (.cursorX , .cursorY) para que estén centrados en el pixel de puntero.
+    cursor.style.transform = `translateX(${cursorX}px) translateY(${cursorY}px)`
+    cursorTail.forEach(function(eachCursor, i){
+        cursorTail[i].style.transform = `translateX(${cursorX}px) translateY(${cursorY}px)`
     })
 
-    const cursorTail = document.querySelectorAll('.cursor__tail')
+    ////Posteriormente se le aplicará un delay a los circulos de la cola (.cursor__tail) en index.css para crear un efecto de seguimiento
+})
 
-console.log( cursorTail )
 
-    window.addEventListener( 'mousemove' , function( e ){
 
-        console.clear()
+//----------------CAMBIO DE COLORES DE LA COLA DEL PUNTERO---------------------//
+// Función para que la cola formada por un conjunto/array de .cursor__tail puedan cambiar de color según elija el usuario:
 
-        // console.log( 'e.clientX' )
-        // console.log( e.clientX )
-        // console.log( 'e.clientY' )
-        // console.log( e.clientY )
+////Definimos un array de botones de selección de colores (.color__btn), una constante para el botón de borrado (.color__none) y una constante para el circulo interior del puntero que muestra el color escogido (.cursor__inner)
+let colorBtn              = document.querySelectorAll('.color__btn')
+const colorNone             = document.querySelector('.color__none')
+const cursorInner           = document.querySelector('.cursor__inner')
 
-        const cursorX = e.clientX - 30
-        const cursorY = e.clientY - 30
+colorBtn.forEach(function(eachBtn,i){
 
-        console.log( 'cursorX' )
-        console.log( cursorX )
-        console.log( 'cursorY' )
-        console.log( cursorY )
+    ////Cuando se hace click en un botón (click)
+    colorBtn[i].addEventListener('click',function(){
 
-        cursorTail.forEach(function(eachCursor, i){
-            cursorTail[i].style.transform = `translateX(${cursorX}px) translateY(${cursorY}px)`
+        ////Se les quita el color a todos botones
+        colorBtn.forEach(function(eachBtn,k){
+            colorBtn[k].style.backgroundColor=""
         })
-    })
 
-//----------------------------------REVISAR Y RETOCAR---------------------//
-// Cuando hago CLICK en .color__btn,
-//// TODOS .cursor__tail le REMOVE active
-//// MISMO INDEX .cursor__tail le ADD active
-//// MISMO INDEX .color__btn IF ELSE en segundas clases para aplicar efecto en .cursor__tail (.cursor__tail ==> opacity: 1)
+        ////Si es el botón rojo (.color__btn[0])
+        if(i === 0){
+            
+            ////A todos los componentes de la cola (.cursor__tail) se les aplica el color rojo y se les añade la clase 'active' para que sean visibles
+            cursorTail.forEach(function(eachTail,j){
+                cursorTail[j].classList.add('active')
+                cursorTail[j].style.backgroundColor="red"
+            })
 
+            ////Se les da un sombreado de rango variable del mismo color a los distintos elementos de la cola (.cursor__tail)
+            cursorTail.forEach(function(eachTail,k){
+                const tailRadius = ( k + 1 ) * 20
+                cursorTail[k].style.boxShadow= `0 0 100px ${tailRadius}px red`
+            })
 
-const colorBtn        = document.querySelectorAll('.color__btn')
-const colorNone        = document.querySelector('.color__none')
-const cursorInner      = document.querySelector('.cursor__inner')
+            ////Se le aplica el mismo color al circulo interior del puntero (.cursor__inner)
+            cursorInner.style.backgroundColor="red"
 
-console.log( colorBtn)
-console.log( colorNone)
-console.log( cursorTail )
-console.log( cursorInner )
+            ////Se le da el color rojo al botón rojo
+            colorBtn[i].style.backgroundColor="red"
+        }
 
-    colorBtn.forEach(function(eachBtn,i){
+        ////Si es el botón verde (.color__btn[1])
+        else if(i === 1){
 
-        colorBtn[i].addEventListener('click',function(){
+            ////A todos los componentes de la cola (.cursor__tail) se les aplica el color verde y se les añade la clase 'active' para que sean visibles
+            cursorTail.forEach(function(eachTail,j){
+                cursorTail[j].classList.add('active')
+                cursorTail[j].style.backgroundColor="lime"
+            })
+            
+            ////Se les da un sombreado de rango variable del mismo color a los distintos elementos de la cola (.cursor__tail)
+            cursorTail.forEach(function(eachTail,k){
+                const tailRadius = ( k + 1 ) * 20
+                cursorTail[k].style.boxShadow= `0 0 100px ${tailRadius}px lime`
+            })
 
-            if(i === 0){
-                cursorTail.forEach(function(eachTail,j){
-                    cursorTail[j].classList.add('active')
-                    cursorTail[j].style.backgroundColor="red"
-                })
-                cursorTail[0].style.boxShadow="0 0 100px 20px red"
-                cursorTail[1].style.boxShadow="0 0 100px 40px red"
-                cursorTail[2].style.boxShadow="0 0 100px 60px red"
-                cursorTail[3].style.boxShadow="0 0 100px 80px red"
-                cursorTail[4].style.boxShadow="0 0 100px 100px red"
-                cursorInner.style.backgroundColor="red"
-                colorBtn[0].style.backgroundColor="red"
-                colorBtn[1].style.backgroundColor=""
-                colorBtn[2].style.backgroundColor=""
-            }
-            else if(i === 1){
-                cursorTail.forEach(function(eachTail,j){
-                    cursorTail[j].classList.add('active')
-                    cursorTail[j].style.backgroundColor="lime"
-                })
-                cursorTail[0].style.boxShadow="0 0 100px 20px lime"
-                cursorTail[1].style.boxShadow="0 0 100px 40px lime"
-                cursorTail[2].style.boxShadow="0 0 100px 60px lime"
-                cursorTail[3].style.boxShadow="0 0 100px 80px lime"
-                cursorTail[4].style.boxShadow="0 0 100px 100px lime"
-                cursorInner.style.backgroundColor="lime"
-                colorBtn[0].style.backgroundColor=""
-                colorBtn[1].style.backgroundColor="lime"
-                colorBtn[2].style.backgroundColor=""
-            }
-            else{
-                cursorTail.forEach(function(eachTail,j){
-                    cursorTail[j].classList.add('active')
-                    cursorTail[j].style.backgroundColor="blue"
-                    cursorTail[j].style.backgroundColor="blue"
-                })
-                cursorTail[0].style.boxShadow="0 0 100px 20px blue"
-                cursorTail[1].style.boxShadow="0 0 100px 40px blue"
-                cursorTail[2].style.boxShadow="0 0 100px 60px blue"
-                cursorTail[3].style.boxShadow="0 0 100px 80px blue"
-                cursorTail[4].style.boxShadow="0 0 100px 100px blue"
-                cursorInner.style.backgroundColor="blue"
-                colorBtn[0].style.backgroundColor=""
-                colorBtn[1].style.backgroundColor=""
-                colorBtn[2].style.backgroundColor="blue"
-            }
+            ////Se le aplica el mismo color al circulo interior del puntero (.cursor__inner)
+            cursorInner.style.backgroundColor="lime"
 
-        })
-    })
+            ////Se le da el color verde al botón verde
+            colorBtn[i].style.backgroundColor="lime"
+        }
 
-    colorNone.addEventListener('click',function(){
+        ////Si es el botón razul (.color__btn[2])
+        else{
 
-        cursorTail.forEach(function(eachTail,i){
-            cursorTail[i].classList.remove('active')
-        })
-        cursorInner.style.backgroundColor=""
-        colorBtn[0].style.backgroundColor=""
-        colorBtn[1].style.backgroundColor=""
-        colorBtn[2].style.backgroundColor=""
+            ////A todos los componentes de la cola (.cursor__tail) se les aplica el color azul y se les añade la clase 'active' para que sean visibles
+            cursorTail.forEach(function(eachTail,j){
+                cursorTail[j].classList.add('active')
+                cursorTail[j].style.backgroundColor="blue"
+                cursorTail[j].style.backgroundColor="blue"
+            })
+            
+            ////Se les da un sombreado de rango variable del mismo color a los distintos elementos de la cola (.cursor__tail)
+            cursorTail.forEach(function(eachTail,k){
+                const tailRadius = ( k + 1 ) * 20
+                cursorTail[k].style.boxShadow= `0 0 100px ${tailRadius}px blue`
+            })
+
+            ////Se le aplica el mismo color al circulo interior del puntero (.cursor__inner)
+            cursorInner.style.backgroundColor="blue"
+
+            ////Se le da el color azul al botón azul
+            colorBtn[i].style.backgroundColor="blue"
+        }
 
     })
+})
+
+////Cuando se hace click en el botón de borrado (.color__none) (click)
+colorNone.addEventListener('click',function(){
+
+    ////Se les quita la clase 'active' a todos los componentes de la cola (.cursor__tail) para que no sean visibles
+    cursorTail.forEach(function(eachTail,i){
+        cursorTail[i].classList.remove('active')
+    })
+    
+    ////Se les quita el color a todos botones de color
+    colorBtn.forEach(function(eachBtn,j){
+        colorBtn[j].style.backgroundColor=""
+    })
+
+    ////Se les quita el color al circulo interior del puntero (.cursor__inner)
+    cursorInner.style.backgroundColor=""
+
+})
