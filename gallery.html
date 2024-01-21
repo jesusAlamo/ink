@@ -33,8 +33,16 @@
 
 <!--=====================-->
 
+<!-- Descripción: Ese ahivo HTML contiene la página asociada en la que se muestran algunos de los proyectos realizados por el autor hasta la fecha.
+Estructura general:
+- Elementos extra: puntero modificado, esquinas
+- Cabecera: Título de la web visualizada
+- Contenido principal: carrusel infinito a modo de mostrador de proyectos
+- Pie: elementos para adecuar el responsive a dispositivos con pantallas más pequeñas -->
+
 <body>
 
+    <!-- Elementos que componen el puntero en forma de circulo y su cola -->
     <div class="cursor__tail follow__fifth"></div>
     <div class="cursor__tail follow__fourth"></div>
     <div class="cursor__tail follow__third"></div>
@@ -45,9 +53,12 @@
         <div class="cursor__inner"></div>
     </div>
 
+    <!-- Elementos que componen esquinas de la pantalla -->
+    <!-- Enlace al inicio -->
     <a href="index.html" class="corner top__left" title="link a inicio">
         <img src="./assets/icon-home-white.png" alt="icono de inicio blanco" loading="lazy" class="corner__img home__img">
         <div class="corner__area home__hide">
+            <!-- Botón que aparece superpuesto cuando pasamos el ratón por encima para volver a la pantalla inicial -->
             <img src="./assets/icon-home-black.png" alt="icono de inicio blanco" title="link a inicio" loading="lazy" class="corner__img home__img">
         </div>
     </a>
@@ -56,6 +67,8 @@
         <div class="corner__img drop__img">
 
         </div>
+
+        <!-- Botones que aparecen superpuestos cuando pasamos el ratón por encima para la selección de color de cola -->
         <div class="corner__area drop__hide">
             <div class="color__option">
                 <button class="color__btn color__red" title="rojo">
@@ -76,15 +89,21 @@
         </div>
     </div>
 
+    <!-- Enlace al linkedin del autor -->
     <a href="https://es.linkedin.com/in/jesus-aurelio-alamo-alamo" class="corner bottom__left" target="_blank" rel="noreferrer noopener nofollow"> <!-- W3C no me deja meter title en <a> pero sí en <img> -->
         <img src="./assets/icon-linkedin-white.png" alt="logotipo de linkedin blanco" loading="lazy" class="corner__img linkedin__img">
+
+        <!-- imagen superpuesta que aparece en el enlace cuando pasamos el ratón por encima para ir al linkedin del autor -->
         <div class="corner__area linkedin__hide">
             <img src="./assets/icon-linkedin-black.png" alt="logotipo de linkedin negro" title="link a Linkedin" loading="lazy" class="corner__img linkedin__img">
         </div>
     </a>
 
+    <!-- Enlace al github del desarrollo de la web -->
     <a href="https://github.com/jesusAlamo/ink" class="corner bottom__right" target="_blank" rel="noreferrer noopener nofollow"> <!-- W3C no me deja meter title en <a> pero sí en <img> -->
         <img src="./assets/icon-github-white.png" alt="logotipo de github blanco" loading="lazy" class="corner__img github__img">
+
+        <!-- imagen superpuesta que aparece en el enlace cuando pasamos el ratón por encima para ir al github del desarrollo de la web -->
         <div class="corner__area github__hide">
             <img src="./assets/icon-github-black.png" alt="logotipo de github negro" title="link a Github" loading="lazy" class="corner__img github__img">
         </div>
@@ -92,6 +111,7 @@
 
     <!--=====================-->
 
+    <!-- Título de la web visualizada -->
     <header class="header">
         <h1 class="header__h1">
             Galería de proyectos
@@ -101,11 +121,12 @@
     <!--=====================-->
 
     <main class="main">
+
+        <!-- Carrusel infinito con título descriptiva del proyecto en cuestión que se muestra -->
         <div class="main__carousel">
             <div class="main__area">
 
-                <!-- Me cuesta optimizar más las imágenes, la carga de esta web tarda en mostrar las imágenes -->
-
+                <!-- Primer grid para poder cerrar el carrusel infinito sin ver el final e inicio de la animación (solo consta de la última imagen visible al realizar el reinicio de la animación)-->
                 <div class="main__grid">
                     <div class="main__cell cell__empty"></div>
                     <div class="main__cell cell__hoodie">
@@ -115,6 +136,7 @@
                     </div>
                 </div>
 
+                <!-- Segundo grid con la primera y principal visualización por parte del usuario de los proyectos-->
                 <div class="main__grid">
                     <div class="main__cell cell__mug">
                         <span class="cell__text">
@@ -153,6 +175,7 @@
                     </div>
                 </div>
 
+                <!-- Tercer grid con la visualización secundaria para el usuario de los proyectos (su última imagen es la misma que la del primer grid)-->
                 <div class="main__grid">
                     <div class="main__cell square__single">
                         <video class="cell__media" src="./assets/gallery/vid-pixelart-sneeze.mp4" poster="./assets/gallery/img-pixelart-sneeze.png" autoplay muted playsinline loop title="sneeze video"></video>           <!-- no meto preload="none" al aparecer en la primera impresión de esta web -->
@@ -187,6 +210,7 @@
                     </div>
                 </div>
 
+                <!-- Cuarto grid la misma información que el segundo grid de visualización principal para dar efecto de carrusel infinito-->
                 <div class="main__grid">
                     <div class="main__cell cell__mug">
                         <span class="cell__text">
@@ -230,6 +254,7 @@
 
     <!--=====================-->
 
+    <!-- Enlace a inicio visualizable en los responsive de dispositivos con pantallas más pequeñas -->
     <footer class="footer">
         <a href="./index.html" title="link a inicio" class="footer__a footer__center">
             <h2 class="footer__h2">

@@ -34,8 +34,16 @@
 
 <!--=====================-->
 
+<!-- Descripción: Ese ahivo HTML contiene página principal del sitio web.
+Estructura general:
+- Elementos extra: puntero modificado, esquinas
+- Contenido principal: Grid con funcionalidad similar a <nav> para acceder alas diferentes páginas webs asociadas
+- Contenido mobil horizontal: elementos para la visualización en pantallas de movil en disposición horizontal
+- Contenido mobil vertical: elementos para la visualización en pantallas de movil en disposición vertical -->
+
 <body>
 
+    <!-- Elementos que componen el puntero en forma de circulo y su cola -->
     <div class="cursor__tail follow__fifth"></div>
     <div class="cursor__tail follow__fourth"></div>
     <div class="cursor__tail follow__third"></div>
@@ -46,8 +54,11 @@
         <div class="cursor__inner"></div>
     </div>
 
+    <!-- Elementos que componen esquinas de la pantalla -->
     <div class="corner top__left">
         <img src="./assets/icon-closed-eye-white.png" alt="botón de ojo blanco" loading="lazy" class="corner__img">
+
+        <!-- Botón que aparece superpuesto cuando pasamos el ratón por encima para visualizar mejor la pantalla inicial -->
         <button class="corner__area eye__hide" title="clarividencia">
             <img src="./assets/icon-closed-eye-black.png" alt="botón de ojo negro" loading="lazy" class="corner__img eye__img">
         </button>
@@ -57,6 +68,8 @@
         <div class="corner__img drop__img">
 
         </div>
+
+        <!-- Botones que aparecen superpuestos cuando pasamos el ratón por encima para la selección de color de cola -->
         <div class="corner__area drop__hide">
             <div class="color__option">
                 <button class="color__btn color__red" title="rojo">
@@ -77,15 +90,21 @@
         </div>
     </div>
 
+    <!-- Enlace al linkedin del autor -->
     <a href="https://es.linkedin.com/in/jesus-aurelio-alamo-alamo" class="corner bottom__left" target="_blank" rel="noreferrer noopener nofollow"> <!-- W3C no me deja meter title en <a> pero sí en <img> -->
         <img src="./assets/icon-linkedin-white.png" alt="logotipo de linkedin blanco" loading="lazy" class="corner__img linkedin__img">
+
+        <!-- imagen superpuesta que aparece en el enlace cuando pasamos el ratón por encima para ir al linkedin del autor -->
         <div class="corner__area linkedin__hide">
             <img src="./assets/icon-linkedin-black.png" alt="logotipo de linkedin negro" title="link a Linkedin" loading="lazy" class="corner__img linkedin__img">
         </div>
     </a>
 
+    <!-- Enlace al github del desarrollo de la web -->
     <a href="https://github.com/jesusAlamo/ink" class="corner bottom__right" target="_blank" rel="noreferrer noopener nofollow"> <!-- W3C no me deja meter title en <a> pero sí en <img> -->
         <img src="./assets/icon-github-white.png" alt="logotipo de github blanco" loading="lazy" class="corner__img github__img">
+
+        <!-- imagen superpuesta que aparece en el enlace cuando pasamos el ratón por encima para ir al github del desarrollo de la web -->
         <div class="corner__area github__hide">
             <img src="./assets/icon-github-black.png" alt="logotipo de github negro" title="link a Github" loading="lazy" class="corner__img github__img">
         </div>
@@ -97,6 +116,7 @@
    
     <!--=====================-->
 
+    <!-- Selector de web sociada a visualizar -->
     <main class="main">
         <div class="main__grid">
             <div class="main__cell empty">
@@ -174,6 +194,7 @@
             </div>
         </div>
 
+        <!-- Visualización en pantallas pequeñas tipo movil en orientación horizontal (puede suprimirse si se encuentra una manera optima de realizar este tipo de responsive reutilizando todo el código anterior) -->
 
         <div class="main__mobile main__horizontal">
             <h2 class="mobile__h2">
@@ -213,6 +234,7 @@
             </nav>
         </div>
 
+        <!-- Visualización en pantallas pequeñas tipo movil en orientación vertical (puede suprimirse si se encuentra una manera optima de realizar este tipo de responsive reutilizando todo el código anterior) -->
         <div class="main__mobile main__vertical">
             <h2 class="mobile__h2">
                 <img src="./assets/ink-logo-v2-optimized.webp" alt="INK logo" loading="lazy" class="mobile__logo logo__vertical">

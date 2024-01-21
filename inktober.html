@@ -33,8 +33,16 @@
 
 <!--=====================-->
 
+<!-- Descripción: Ese ahivo HTML contiene la página asociada en la que se muestra el progreso del autor sobre el reto diario de ilustración/entintado conocido como INKTOBER que se lleva a cabo en octubre.
+Estructura general:
+- Elementos extra: puntero modificado, esquinas
+- Cabecera: Enlace a las bases del reto y título de la web visualizada
+- Contenido principal: calendario con todas las ilustraciones realizadas durante el reto diario de INKTOBER
+- Pie: elementos para adecuar el responsive a dispositivos con pantallas más pequeñas -->
+
 <body>
 
+    <!-- Elementos que componen el puntero en forma de circulo y su cola -->
     <div class="cursor__tail follow__fifth"></div>
     <div class="cursor__tail follow__fourth"></div>
     <div class="cursor__tail follow__third"></div>
@@ -45,9 +53,12 @@
         <div class="cursor__inner"></div>
     </div>
 
+    <!-- Elementos que componen esquinas de la pantalla -->
+    <!-- Enlace al inicio -->
     <a href="index.html" class="corner top__left" title="link a inicio">
         <img src="./assets/icon-home-white.png" alt="icono de inicio blanco" loading="lazy" class="corner__img home__img">
         <div class="corner__area home__hide">
+            <!-- Botón que aparece superpuesto cuando pasamos el ratón por encima para volver a la pantalla inicial -->
             <img src="./assets/icon-home-black.png" alt="icono de inicio blanco" title="link a inicio" loading="lazy" class="corner__img home__img">
         </div>
     </a>
@@ -56,6 +67,8 @@
         <div class="corner__img drop__img">
 
         </div>
+
+        <!-- Botones que aparecen superpuestos cuando pasamos el ratón por encima para la selección de color de cola -->
         <div class="corner__area drop__hide">
             <div class="color__option">
                 <button class="color__btn color__red" title="rojo">
@@ -76,15 +89,21 @@
         </div>
     </div>
 
+    <!-- Enlace al linkedin del autor -->
     <a href="https://es.linkedin.com/in/jesus-aurelio-alamo-alamo" class="corner bottom__left" target="_blank" rel="noreferrer noopener nofollow"> <!-- W3C no me deja meter title en <a> pero sí en <img> -->
         <img src="./assets/icon-linkedin-white.png" alt="logotipo de linkedin blanco" loading="lazy" class="corner__img linkedin__img">
+
+        <!-- imagen superpuesta que aparece en el enlace cuando pasamos el ratón por encima para ir al linkedin del autor -->
         <div class="corner__area linkedin__hide">
             <img src="./assets/icon-linkedin-black.png" alt="logotipo de linkedin negro" title="link a Linkedin" loading="lazy" class="corner__img linkedin__img">
         </div>
     </a>
 
+    <!-- Enlace al github del desarrollo de la web -->
     <a href="https://github.com/jesusAlamo/ink" class="corner bottom__right" target="_blank" rel="noreferrer noopener nofollow"> <!-- W3C no me deja meter title en <a> pero sí en <img> -->
         <img src="./assets/icon-github-white.png" alt="logotipo de github blanco" loading="lazy" class="corner__img github__img">
+
+        <!-- imagen superpuesta que aparece en el enlace cuando pasamos el ratón por encima para ir al github del desarrollo de la web -->
         <div class="corner__area github__hide">
             <img src="./assets/icon-github-black.png" alt="logotipo de github negro" title="link a Github" loading="lazy" class="corner__img github__img">
         </div>
@@ -92,6 +111,7 @@
 
     <!--=================-->
 
+    <!-- Título de la web visualizada -->
     <header class="header">
         <a href="https://inktober.com/rules" class="header__a" title="Link a reglas de Inktober" target="_blank" rel="noreferrer noopener nofollow">
             <h1 class="header__h1">
@@ -103,7 +123,11 @@
     <!--=================-->
 
     <main class="main">
+
+        <!-- Calendario de octubre de 2023 en display grid -->
         <div class="main__grid">
+
+            <!-- Días de la semana -->
             <div class="main__cell day">
                 <span class="main__span">
                     L
@@ -140,6 +164,7 @@
                 </span>
             </div>
 
+            <!-- Días del mes de septiembre que se toman vacíos y sin mostrarse -->
             <div class="main__cell empty"></div>
             <div class="main__cell empty"></div>
             <div class="main__cell empty"></div>
@@ -147,6 +172,7 @@
             <div class="main__cell empty"></div>
             <div class="main__cell empty"></div>
 
+            <!-- Días del mes de octubre (31 días) de 2023 compuestos por el número como botón y el lightbox asociado (presentan imagen de ilustración, enlace a la ilustración publicada en el instagram del autor, texto descriptivo y boton de cierre) -->
             <div class="main__cell">
                 <button class="main__number" title="Día 1">
                     1
@@ -1109,6 +1135,7 @@
                 </div>
             </div>
 
+            <!-- Días del mes de noviembre que se toman vacíos y sin mostrarse -->
             <div class="main__cell empty"></div>
             <div class="main__cell empty"></div>
             <div class="main__cell empty"></div>
@@ -1119,6 +1146,8 @@
 
     <!--=================-->
 
+    <!-- Enlace a inicio visualizable en los responsive de dispositivos con pantallas más pequeñas -->
+    <!-- BUG: en tamaños pequeños se tiene que posicionar el enlace a inicoo en la esquina izquierda (también podría haberse posicionado en la esquina derecha) para no interferir en la lectura del span de los lightbox -->
     <footer class="footer">
         <a href="./index.html" title="link a inicio" class="footer__a footer__center">
             <h2 class="footer__h2">
