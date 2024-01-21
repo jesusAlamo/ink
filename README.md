@@ -28,8 +28,8 @@ Así, tras la realización del proyecto, llego a la idea de seguir trabajando en
 ## Autor ✒️
 **Jesús Álamo**
 
-* [LinkedIn]([https://www.linkedin.com/in/tu-url-de-linkedin/](https://es.linkedin.com/in/jesus-aurelio-alamo-alamo))
-* [Instagram]([https://www.behance.net/tu-url-de-behance](https://www.instagram.com/jauro21/))
+* [LinkedIn](https://www.linkedin.com/in/tu-url-de-linkedin/](https://es.linkedin.com/in/jesus-aurelio-alamo-alamo))
+* [Instagram](https://www.behance.net/tu-url-de-behance](https://www.instagram.com/jauro21/))
 
 ## Instalación 
 Este proyecto no necesita de instalación. Simplemente abre la carpeta o haz doble click en el .html
