@@ -1,17 +1,17 @@
-# Título del proyecto
-![Imagen del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/IMAGEN-DEL-PROYECTO.jpg?raw=true)
+# INK
+![Imagen del proyecto](https://github.com/jesusAlamo/ink/raw/main/assets/ink-logo-v2-optimized.webp)
 
-## Ejemplo en vivo
-- [URL-de-github-pages-de-este-proyecto](URL-de-github-pages-de-este-proyecto)
-- [URL-de-la-api](URL-de-la-api)
+## Enlace de visualización
+- [INK](https://jesusalamo.github.io/ink/)
 
 ## Descripción 📑
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, ipsum ipsam debitis ducimus dolorum placeat? Consectetur, soluta vero. Accusamus iure est pariatur, doloremque nam cumque natus unde adipisci laborum ut. At id sapiente consequatur earum. Magnam doloribus, voluptate zumito doloremque obcaecati vel excepturi numquam cupiditate ipsam quisquam!
+INK pretende reflejar las bases de la ilustración optando por la apuesta de colores básicos, es decir, blanco (#FFFFFF) y negro (#000000) con ciertos detalles sutiles de los colores RGB: Rojo (#FF0000), Verde (#00FF00) y Azul (#0000FF).
 
 ## ¿Qué he aprendido en este proyecto? 🙇🏻 
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, ipsum ipsam debitis ducimus dolorum placeat? Consectetur, soluta vero. Accusamus iure est pariatur, doloremque nam cumque natus unde adipisci laborum ut. At id sapiente consequatur earum. Magnam doloribus, voluptate zumito doloremque obcaecati vel excepturi numquam cupiditate ipsam quisquam!
+El desarrollo de INK no solo ha sentado las bases del desarrollo frontend mediante el uso de HTML5, CSS3 y JavaScript si no que también hace darse cuenta de cómo las ambiciones personales que pongas para cada proyecto pueden complicar su desarrollo e incluso que la sencillez puede no ser sinónimo de producto precario y que a veces una elaboración mayor puede significar demasiada complicación, al punto de ser dificil de manejar.
+Así, tras la realización del proyecto, llego a la idea de seguir trabajando en INK para darle un sencillez y así lograr una usabilidad más eficaz.
 
 ## Tecnologías 🛠
 <!-- Iconos sacados de: https://github.com/hendrasob/badges/blob/master/README.md y https://github.com/alexandresanlim/Badges4-README.md-Profile -->
@@ -20,20 +20,16 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, 
 [![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://es.wikipedia.org/wiki/JavaScript)
 
 ## Vista previa del proyecto
-Si quieres hechas un vistazo al proyecto, te recomiendo:
-
-![Captura del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/CAPTURA-DEL-PROYECTO.jpg?raw=true)
-![Captura del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/CAPTURA-DEL-PROYECTO.jpg?raw=true)
-![Captura del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/CAPTURA-DEL-PROYECTO.jpg?raw=true)
+![INDEX](https://github.com/jesusAlamo/ink/blob/main/screenshots/captura-index.png?raw=true)
+![INKTOBER](https://github.com/jesusAlamo/ink/blob/main/screenshots/captura-inktober.png?raw=true)
+![GALLERY](https://github.com/jesusAlamo/ink/blob/main/screenshots/captura-gallery.png?raw=true)
+![ABOUT](https://github.com/jesusAlamo/ink/blob/main/screenshots/captura-about.png?raw=true)
 
 ## Autor ✒️
-**TU NOMBRE**
+**Jesús Álamo**
 
-* [micorreo@midominio.com](micorreo@midominio.com)
-* [LinkedIn](https://www.linkedin.com/in/tu-url-de-linkedin/)
-* [Behance](https://www.behance.net/tu-url-de-behance)
-* [Dribble](https://www.dribble.com/tu-url-de-dribble)
-* [Porfolio web](https://tu-dominio.com/)
+* [LinkedIn](https://www.linkedin.com/in/tu-url-de-linkedin/](https://es.linkedin.com/in/jesus-aurelio-alamo-alamo))
+* [Instagram](https://www.behance.net/tu-url-de-behance](https://www.instagram.com/jauro21/))
 
 ## Instalación 
 Este proyecto no necesita de instalación. Simplemente abre la carpeta o haz doble click en el .html
